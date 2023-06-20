@@ -23,20 +23,31 @@ import Stack from '../components/Stack.astro'
 </section>
 
 <div class="ms-[8rem] flex justify-center w-[30%] animate-button">
-  <button class="w-[12rem] h-[3rem] bg-primary text-black font-bold text-[1.2rem] rounded-lg me-[4rem] hover:bg-white hover:text-primary shadow-inner shadow-solid">Descargar CV</button>
+  <button class="w-[12rem] h-[3rem] bg-primary text-black font-bold text-[1.2rem] 
+  rounded-lg me-[4rem] hover:bg-white hover:text-primary shadow-inner shadow-solidOrange transition-all"
+  id="downloadButton">Descargar CV</button>
   
-  <button class="w-[12rem] h-[3rem] bg-white text-black font-bold text-[1.2rem] rounded-lg me-[2rem] hover:bg-primary hover:text-white">Contacto</button>
-</div>
-
-<div class="flex justify-center items-center mt-[13rem] w-[100%] mb-[5rem]">
-  <hr class="w-[35rem] text-secondary">
-  <span class="text-primary ms-[1rem] text-[2rem]">&#123</span>
-  <span class="text-white text-[2rem] px-[.5rem]">Mi Stack</span>
-  <span class="text-primary me-[1rem] text-[2rem]">&#x7D</span>
-  <hr class="w-[35rem] text-secondary">
+  <button class="w-[12rem] h-[3rem] bg-white text-black font-bold text-[1.2rem] 
+  rounded-lg me-[2rem] hover:bg-primary hover:text-white shadow-inner shadow-solidWhite transition-all">Contactame</button>
 </div>
 
 <Stack />
 
 
 
+
+<script>
+  const downloadButton = document.getElementById('downloadButton');
+
+  downloadButton.addEventListener('click', () => {
+    const fileUrl = '/resume.pdf';
+    const fileName = 'resume.pdf';
+
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.download = fileName;
+    link.click();
+  })
+
+
+</script>

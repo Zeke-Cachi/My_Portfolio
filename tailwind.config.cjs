@@ -59,10 +59,11 @@ module.exports = {
 				'h1Slide': 'slideUp 500ms ease-in',
 				'pSlide': 'slideUp 1s ease-in',
 				'button': 'buttonShow 1.5s ease-in',
-				'stack': 'stackSlide 20s infinite linear'
+				'stack': 'stackSlide 30s infinite linear'
       },
 			boxShadow: {
-				'solid': '0 0 0 2px #fa8500',
+				'solidOrange': '0 0 0 2px #fa8500',
+				'solidWhite': '0 0 0 2px #fff'
 			}
 		}
 		
