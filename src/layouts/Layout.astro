@@ -1,0 +1,88 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+
+	<body class="bg-mainbg text-white font-roboto overflow-x-hidden">
+		<header class="flex justify-between items-center w-[100%] p-[1rem]">
+			<a href="/">
+				<img src="/logo.png" alt="" class="pt-[.7rem] w-[4rem] ms-[1rem]">
+			</a>
+
+			<nav class="me-[3rem] hidden md:block">
+				<ul class="flex justify-between">
+					<li class="mx-[1rem] text-[1.2rem] relative group">
+						<a href="/">Home</a>
+						<hr class="absolute w-[100%] hidden group-hover:block group-hover:text-primary group-hover:animate-line">
+					</li>
+
+					<li class="mx-[1rem] text-[1.2rem] relative group">
+						<a href="/Sobre">Sobre mi</a>
+						<hr class="absolute w-[100%] hidden group-hover:block group-hover:text-primary group-hover:animate-line">
+					</li>
+
+					<li class="mx-[1rem] text-[1.2rem] relative group">
+						<a href="/proyectos">Proyectos</a>
+						<hr class="absolute w-[100%] hidden group-hover:block group-hover:text-primary group-hover:animate-line">
+					</li>
+
+					<li class="mx-[1rem] text-[1.2rem] relative group">
+						<a href="/contacto">Contacto</a>
+						<hr class="absolute w-[100%] hidden group-hover:block group-hover:text-primary group-hover:animate-line">
+					</li>
+				</ul>
+			</nav>
+
+			<button
+				class="h-[4rem] mx-[1rem] md:hidden">
+				<div class="w-[2.5rem] h-[.3rem] bg-white my-[.2rem] rounded-xl"></div>
+				<div class="w-[2rem] h-[.3rem] bg-white my-[.2rem] rounded-xl"></div>
+				<div class="w-[1.5rem] h-[.3rem] bg-white my-[.2rem] rounded-xl"></div>
+			</button>
+
+		</header>
+		<hr class="w-[100%] text-secondary animate-headerBottom mx-auto mb-[3rem]">
+
+
+		<slot />
+
+	</body>
+</html>
+
+<script>
+	let button = document.querySelector('header button');
+	let navbar = document.querySelector('nav');
+	let list = document.querySelector('ul')
+
+	button?.addEventListener('click', (e:any)=> {
+		if ( navbar?.classList.contains('hidden') ) {
+			navbar?.classList.remove('hidden');
+			navbar?.classList.add('block', 'animate-appear');
+		} else {
+			navbar?.classList.remove('block');
+			navbar?.classList.add('hidden', 'animate-appear');
+		}
+		list?.classList.add('flex-col', 'absolute', 'top-[5rem]', 'right-[1rem]')
+	})
+</script>
+

@@ -1,0 +1,42 @@
+---
+import MainLayout from '../layouts/Layout.astro'
+import Stack from '../components/Stack.astro'
+---
+
+<MainLayout title="Ezequiel Cachi - Home">
+
+<section class="flex justify-between items-center p-[1rem]">
+  <div class="basis-[60%] p-[3rem]">
+    <h1 class="mb-[2rem] text-[4rem] text-white font-raleway animate-h1Slide font-bold">Hola! soy <span class="text-primary">Ezequiel Cachi</span>, desarrollador web Fullstack
+    </h1>
+
+    <p class="font-roboto animate-pSlide text-[1.2rem] leading-[1.8rem] pe-[4rem] font-light">Soy un desarrollador web apasionado por la confección de contenido de calidad, con interfaces intuitivas y código limpio y legible. Cuento con conocimientos
+    tanto del frontend como del backend, pudiendo crear páginas y aplicaciones web desde cero. Actualmente estoy buscando un rol en el cual pueda demostrar mis conocimientos, al mismo tiempo
+    de desarrollar cada vez más mi gama de herramientas y maximizar mi aprendizaje
+    </p>
+  </div>
+
+  <img 
+    src="./mainImg.jpeg" 
+    alt="profile picture"
+    class="w-[30rem] h-[30rem] rounded-full border-secondary border-[5px] mx-auto animate-slideFromRight">
+</section>
+
+<div class="ms-[8rem] flex justify-center w-[30%] animate-button">
+  <button class="w-[12rem] h-[3rem] bg-primary text-black font-bold text-[1.2rem] rounded-lg me-[4rem] hover:bg-white hover:text-primary shadow-inner shadow-solid">Descargar CV</button>
+  
+  <button class="w-[12rem] h-[3rem] bg-white text-black font-bold text-[1.2rem] rounded-lg me-[2rem] hover:bg-primary hover:text-white">Contacto</button>
+</div>
+
+<div class="flex justify-center items-center mt-[13rem] w-[100%] mb-[5rem]">
+  <hr class="w-[35rem] text-secondary">
+  <span class="text-primary ms-[1rem] text-[2rem]">&#123</span>
+  <span class="text-white text-[2rem] px-[.5rem]">Mi Stack</span>
+  <span class="text-primary me-[1rem] text-[2rem]">&#x7D</span>
+  <hr class="w-[35rem] text-secondary">
+</div>
+
+<Stack />
+
+
+
