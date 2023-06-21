@@ -2,39 +2,167 @@
 
 <div class="flex justify-center items-center mt-[13rem] w-[100%] mb-[5rem]">
   <hr class="w-[35rem] text-secondary">
-  <span class="text-primary ms-[1rem] text-[3rem] font-raleway">&#123</span>
+  <span class="text-primary ms-[1rem] text-[3rem]">&#123</span>
   <span class="text-white text-[3rem] px-[.5rem] font-raleway">Mis Proyectos</span>
-  <span class="text-primary me-[1rem] text-[3rem] font-raleway">&#x7D</span>
+  <span class="text-primary me-[1rem] text-[3rem]">&#x7D</span>
   <hr class="w-[35rem] text-secondary">
 </div>
 
 <section>
+
+  <!---------------- GROUP CALCULATOR CARD ---------------->
   <div class="grid grid-cols-2 px-[2rem] place-items-center custom-perspective cursor-pointer">
 
-    <div class="col-span-2 w-[90rem] h-[30rem] border-[2px] border-white rounded-lg mb-[3rem] grid place-items-center relative transition-all 
-    duration-500 card hover:shadow-solidOrange" id="card">
+    <div 
+      class="col-span-2 w-[90rem] h-[30rem] border-[2px] border-white rounded-lg mb-[5rem] grid place-items-center relative transition-all 
+    duration-500 card hover:shadow-solidOrange" 
+      id="calculatorCard">
 
-      <div class="absolute top-0 left-0 w-[100%] h-[100%] bg-mainbg grid place-items-center border-white rounded-lg">
-        <h2 class="text-center text-[5rem] text-primary font-bold">Separador de cuentas</h2>
+      <div class="absolute top-0 left-0 w-[100%] h-[100%] bg-mainbg grid place-items-center border-white rounded-lg px-[1rem]">
+        <h2 class="text-center text-[5rem] text-primary font-bold">Calculadora de costos grupales</h2>
       </div>
 
       <div class="grid grid-cols-11 absolute place-items-center top-0 left-0 w-[100%] h-[100%] bg-mainbg border-white rounded-lg custom-rotate">
-        <div class="bg-calculator w-[100%] h-[100%] col-span-5 bg-contain bg-no-repeat"></div>
-        <div class="w-[100%] h-[100%] col-span-5 flex flex-col justify-center ps-[3rem]">
+        <div class="bg-calculator w-[100%] h-[100%] col-span-6 bg-cover bg-no-repeat border-e-[2px] border-b-white"></div>
+        <div class="w-[100%] h-[100%] col-span-5 flex flex-col justify-center px-[3rem] bg-secondary">
           <h3 class="font-raleway text-[2.5rem] text-primary">Calculadora de costos grupales</h3>
           <p class="mt-[1rem] text-[1rem] font-Roboto">WebApp para dividir de modo equitativo los costos entre un grupo de personas. Se elige la cantidad de participantes, se coloca el nombre en cada tarjeta, y se va ingresando
             el producto, costo, y personas que lo consumieron, devolviendo el monto exacto que debe abonar cada uno. Hecha con Next.js y Tailwind, manejada solamente con useState y useEffect,
             sin nada de backend.
           </p>
-          <p class="mt-[1rem] font-Roboto">Podes ver el código <a href="https://github.com/Zeke-Cachi/Check_Splitter_webapp" class="font-bold text-primary">acá</a></p>
-          <p class="mt-[1rem] font-Roboto">Podes ver el deploy <a href="https://aesthetic-swan-27ee55.netlify.app" class="font-bold text-primary">acá</a></p>
+          <p class="mt-[1rem] font-Roboto italic">Podes ver el código 
+            <a 
+              href="https://github.com/Zeke-Cachi/Check_Splitter_webapp" 
+              class="font-bold text-primary hover:text-white"
+              target="_blank" rel="noopener noreferrer">acá</a></p>
+          <p class="mt-[1rem] font-Roboto italic">Podes ver el deploy 
+            <a 
+              href="https://aesthetic-swan-27ee55.netlify.app" 
+              class="font-bold text-primary hover:text-white"
+              target="_blank" rel="noopener noreferrer">acá</a></p>
         </div>
       </div>
     </div>
     
   </div>
+
+  <div class="flex justify-around px-[11rem]">
+    <!---------------- MOVIE DATABASE CARD ---------------->
+    <div class="grid grid-row-2 px-[2rem] place-items-center custom-perspective cursor-pointer">
+
+      <div 
+        class="w-[25rem] h-[42rem] border-[2px] border-white rounded-lg mb-[3rem] grid grid-rows-2 place-items-center relative transition-all 
+      duration-500 card hover:shadow-solidOrange" 
+        id="movieCard">
+
+        <div class="absolute top-0 left-0 w-[100%] h-[100%] bg-mainbg grid place-items-center border-white rounded-lg px-[1rem]">
+          <h2 class="text-center text-[5rem] text-primary font-bold">Movie Database</h2>
+        </div>
+
+        <div class="flex flex-col justify-center items-center absolute place-items-center top-0 left-0 w-[100%] h-[100%] bg-mainbg border-white rounded-lg custom-rotate">
+          <div class="bg-database w-[100%] h-[100%] bg-cover bg-no-repeat bg-center border-b-[2px] border-b-white"></div>
+          <div class="w-[100%] h-[100%] flex flex-col justify-center p-[1rem] bg-secondary">
+            <h3 class="font-raleway text-[2rem] text-primary text-center">Movie Database</h3>
+            <p class="mt-[1rem] text-[1rem] font-Roboto">Base de datos de películas. Se usó la API de The Movie Database, hecha con React (create-react-app, previo a su deprecación) y Tailwind,
+              tiene la opción de buscar por nombre, otorga datos de nombre, rating, y un modal con más detalles de la película buscada. 
+            </p>
+            <p class="mt-[1rem] font-Roboto italic text-center">Podes ver el código 
+              <a 
+                href="https://github.com/Zeke-Cachi/Movie_Database" 
+                class="font-bold text-primary hover:text-white"
+                target="_blank" rel="noopener noreferrer">acá</a></p>
+            <p class="mt-[1rem] font-Roboto italic text-center">Podes ver el deploy 
+              <a 
+                href="https://stirring-treacle-233dbd.netlify.app/" 
+                class="font-bold text-primary hover:text-white"
+                target="_blank" rel="noopener noreferrer">acá</a></p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!---------------- MUSIC STORE STOCK EDITOR CARD ---------------->
+    <div class="grid grid-row-2 px-[2rem] place-items-center custom-perspective cursor-pointer">
+
+      <div 
+        class="w-[25rem] h-[42rem] border-[2px] border-white rounded-lg mb-[3rem] grid grid-rows-2 place-items-center relative transition-all 
+      duration-500 card hover:shadow-solidOrange" 
+        id="musicStore">
+
+        <div class="absolute top-0 left-0 w-[100%] h-[100%] bg-mainbg grid place-items-center border-white rounded-lg px-[1rem]">
+          <h2 class="text-center text-[4rem] text-primary font-bold">Editor de datos (tienda musical)</h2>
+        </div>
+
+        <div class="flex flex-col justify-center items-center absolute place-items-center top-0 left-0 w-[100%] h-[100%] bg-mainbg border-white rounded-lg custom-rotate overflow-hidden">
+          <div class="bg-musicStore w-[100%] h-[100%] bg-cover bg-no-repeat bg-center border-b-[2px] border-b-white"></div>
+          <div class="w-[100%] h-[100%] flex flex-col justify-center p-[1rem] bg-secondary">
+            <h3 class="font-raleway text-[2rem] text-primary text-center">Editor de stock</h3>
+            <p class="mt-[1rem] text-[1rem] font-Roboto">Una aplicación para ver y editar el stock de una tienda musical ficticia. Es un front que le efectué a un servidor CRUD que 
+              había efectuado previamente con Node.js. El front está hecho con Next.js (con Typescript) y Tailwind, usando componentes de DaisyUI.
+            </p>
+            <p class="mt-[1rem] font-Roboto italic text-center">Podes ver el código del front
+              <a 
+                href="https://github.com/Zeke-Cachi/Music_Store_Stock_Editor" 
+                class="font-bold text-primary hover:text-white"
+                target="_blank" rel="noopener noreferrer">acá</a></p>
+            <p class="mt-[1rem] font-Roboto italic text-center">Podes ver el código del servidor CRUD
+              <a 
+                href="https://github.com/Zeke-Cachi/Music_store_CRUD_server" 
+                class="font-bold text-primary hover:text-white"
+                target="_blank" rel="noopener noreferrer">acá</a></p>
+
+            <p class="mt-[1rem] font-Roboto italic text-center">Podes ver el deploy 
+              <a 
+                href="https://music-store-stock-editor.vercel.app/" 
+                class="font-bold text-primary hover:text-white"
+                target="_blank" rel="noopener noreferrer">acá</a></p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!---------------- MY PORTFOLIO CARD ---------------->
+    <div class="grid grid-row-2 px-[2rem] place-items-center custom-perspective cursor-pointer">
+
+      <div 
+        class="w-[25rem] h-[42rem] border-[2px] border-white rounded-lg mb-[3rem] grid grid-rows-2 place-items-center relative transition-all 
+      duration-500 card hover:shadow-solidOrange" 
+        id="portfolio">
+
+        <div class="absolute top-0 left-0 w-[100%] h-[100%] bg-mainbg grid place-items-center border-white rounded-lg px-[1rem]">
+          <h2 class="text-center text-[4rem] text-primary font-bold">Mi Portfolio</h2>
+        </div>
+
+        <div class="flex flex-col justify-center items-center absolute place-items-center top-0 left-0 w-[100%] h-[100%] bg-mainbg border-white rounded-lg custom-rotate overflow-hidden">
+          <div class="bg-portfolio w-[100%] h-[100%] bg-cover bg-no-repeat bg-center border-b-[2px] border-b-white"></div>
+          <div class="w-[100%] h-[100%] flex flex-col justify-center p-[1rem] bg-secondary">
+            <h3 class="font-raleway text-[2rem] text-primary text-center">Mi Porfolio</h3>
+            <p class="mt-[1rem] text-[1rem] font-Roboto">Esta misma página! Hecha con Astro, ya que este framework se da muy bien para sitios estáticos. Se le dió el estilo con
+              Tailwind, y algunas clases a medida con CSS puro (ya que hay algunas propiedades poco usadas de CSS no están aún en las utilidades de Tailwind). La funcionalidad necesaria
+              fue hecha con Typescript.
+            </p>
+            <p class="mt-[1rem] font-Roboto italic text-center">Podes ver el código
+              <a 
+                href="https://github.com/Zeke-Cachi/My_Portfolio" 
+                class="font-bold text-primary hover:text-white"
+                target="_blank" rel="noopener noreferrer">acá</a></p>
+            <p class="mt-[1rem] font-Roboto italic text-center">Podes ver el deploy 
+              <a 
+                href="" 
+                class="font-bold text-primary hover:text-white"
+                target="_blank" rel="noopener noreferrer">acá</a></p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
 </section>
 
+
+<!---------------- CUSTOM CSS ----------------->
 <style>
   .custom-rotate {
     transform: rotateY(180deg);
@@ -50,14 +178,32 @@
   }
 
   .custom-perspective {
-    perspective: 100rem;
+    perspective: 120rem;
   }
 </style>
 
-<script>
-  const card:any = document.getElementById('card');
+<!---------------- JAVASCRIPT ---------------->
 
-  card.addEventListener('click', () => {
-    card.classList.toggle('flipped');
-  })
+<script>
+const calculatorCard = document.getElementById('calculatorCard') as HTMLElement;
+const movieDatabaseCard = document.getElementById('movieCard') as HTMLElement;
+const musicStoreCard = document.getElementById('musicStore') as HTMLElement;
+const portfolioCard = document.getElementById('portfolio') as HTMLElement;
+
+
+calculatorCard.addEventListener('click', () => {
+  calculatorCard.classList.toggle('flipped');
+});
+
+movieDatabaseCard.addEventListener('click', () => {
+  movieDatabaseCard.classList.toggle('flipped');
+});
+
+musicStoreCard.addEventListener('click', () => {
+  musicStoreCard.classList.toggle('flipped');
+})
+
+portfolioCard.addEventListener('click', () => {
+  portfolioCard.classList.toggle('flipped');
+})
 </script>

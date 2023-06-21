@@ -18,7 +18,10 @@ module.exports = {
 			backgroundImage: {
 				stackLeft: 'linear-gradient(to left, transparent, #333333 25%)',
 				stackRight: 'linear-gradient(to right, transparent, #333333 25%)',
-				calculator: 'url("/projects/check-splitter.png")'
+				calculator: 'url("/projects/check-splitter-2.png")',
+				database: 'url("/projects/movie-database.png")',
+				musicStore: 'url("/projects/music-store.png")',
+				portfolio: 'url("/projects/portfolio.png")'
 			},
 			width: {
 				'calc': 'calc(11rem * 12)'
