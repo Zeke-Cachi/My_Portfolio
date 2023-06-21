@@ -12,9 +12,13 @@ module.exports = {
 			black: '#000'
 		},
 		extend: {
+			rotate: {
+        'Y': 'rotateY(180deg)'
+      },
 			backgroundImage: {
 				stackLeft: 'linear-gradient(to left, transparent, #333333 25%)',
-				stackRight: 'linear-gradient(to right, transparent, #333333 25%)'
+				stackRight: 'linear-gradient(to right, transparent, #333333 25%)',
+				calculator: 'url("/projects/check-splitter.png")'
 			},
 			width: {
 				'calc': 'calc(11rem * 12)'
@@ -63,7 +67,8 @@ module.exports = {
       },
 			boxShadow: {
 				'solidOrange': '0 0 0 2px #fa8500',
-				'solidWhite': '0 0 0 2px #fff'
+				'solidWhite': '0 0 0 2px #fff',
+				'solidSecondary': '0 0 0 5px #545454'
 			}
 		}
 		

@@ -1,0 +1,63 @@
+
+
+<div class="flex justify-center items-center mt-[13rem] w-[100%] mb-[5rem]">
+  <hr class="w-[35rem] text-secondary">
+  <span class="text-primary ms-[1rem] text-[3rem] font-raleway">&#123</span>
+  <span class="text-white text-[3rem] px-[.5rem] font-raleway">Mis Proyectos</span>
+  <span class="text-primary me-[1rem] text-[3rem] font-raleway">&#x7D</span>
+  <hr class="w-[35rem] text-secondary">
+</div>
+
+<section>
+  <div class="grid grid-cols-2 px-[2rem] place-items-center custom-perspective cursor-pointer">
+
+    <div class="col-span-2 w-[90rem] h-[30rem] border-[2px] border-white rounded-lg mb-[3rem] grid place-items-center relative transition-all 
+    duration-500 card hover:shadow-solidOrange" id="card">
+
+      <div class="absolute top-0 left-0 w-[100%] h-[100%] bg-mainbg grid place-items-center border-white rounded-lg">
+        <h2 class="text-center text-[5rem] text-primary font-bold">Separador de cuentas</h2>
+      </div>
+
+      <div class="grid grid-cols-11 absolute place-items-center top-0 left-0 w-[100%] h-[100%] bg-mainbg border-white rounded-lg custom-rotate">
+        <div class="bg-calculator w-[100%] h-[100%] col-span-5 bg-contain bg-no-repeat"></div>
+        <div class="w-[100%] h-[100%] col-span-5 flex flex-col justify-center ps-[3rem]">
+          <h3 class="font-raleway text-[2.5rem] text-primary">Calculadora de costos grupales</h3>
+          <p class="mt-[1rem] text-[1rem] font-Roboto">WebApp para dividir de modo equitativo los costos entre un grupo de personas. Se elige la cantidad de participantes, se coloca el nombre en cada tarjeta, y se va ingresando
+            el producto, costo, y personas que lo consumieron, devolviendo el monto exacto que debe abonar cada uno. Hecha con Next.js y Tailwind, manejada solamente con useState y useEffect,
+            sin nada de backend.
+          </p>
+          <p class="mt-[1rem] font-Roboto">Podes ver el código <a href="https://github.com/Zeke-Cachi/Check_Splitter_webapp" class="font-bold text-primary">acá</a></p>
+          <p class="mt-[1rem] font-Roboto">Podes ver el deploy <a href="https://aesthetic-swan-27ee55.netlify.app" class="font-bold text-primary">acá</a></p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<style>
+  .custom-rotate {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+  }
+
+  .flipped {
+    transform: rotateY(180deg);
+  }
+
+  .card {
+    transform-style: preserve-3d;
+  }
+
+  .custom-perspective {
+    perspective: 100rem;
+  }
+</style>
+
+<script>
+  const card:any = document.getElementById('card');
+
+  card.addEventListener('click', () => {
+    card.classList.toggle('flipped');
+  })
+</script>

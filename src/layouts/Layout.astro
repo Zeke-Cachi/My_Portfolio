@@ -42,11 +42,6 @@ const { title } = Astro.props;
 					</li>
 
 					<li class="mx-[1rem] text-[1.2rem] relative group">
-						<a href="/proyectos">Proyectos</a>
-						<hr class="absolute w-[100%] hidden group-hover:block group-hover:text-primary group-hover:animate-line">
-					</li>
-
-					<li class="mx-[1rem] text-[1.2rem] relative group">
 						<a href="/contacto">Contacto</a>
 						<hr class="absolute w-[100%] hidden group-hover:block group-hover:text-primary group-hover:animate-line">
 					</li>
@@ -66,7 +61,7 @@ const { title } = Astro.props;
 
 		<slot />
 
-		<footer class="border-t-[1px] border-t-secondary h-[10rem] flex justify-between items-center w-screen px-[1rem]">
+		<footer class="border-t-[1px] border-t-secondary h-[10rem] grid grid-cols-3 place-items-center w-screen px-[1rem]">
 			<div>
 				<h5 class="ms-[1rem] mb-[.4rem]">Página hecha por Ezequiel Cachi</h5>
 				<h6 class="ms-[1rem] text-secondary text-[.9rem]">® Zeke-Cachi 2023</h6>
@@ -74,11 +69,10 @@ const { title } = Astro.props;
 
 			<img src="./logo.png" alt="logo del footer" class="h-[7rem]">
 			
-			<div class="grid grid-cols-3 grid-row-2 place-items-center pe-[1rem]">
-				<h6 class="col-span-3 mb-[1rem]">Podes ver mis novedades en redes sociales</h6>
-				<img src="/socialMedia/linkedin.svg" alt="linkedin logo" class="h-[3rem] bg-primary">
-				<img src="/socialMedia/github.svg" alt="github logo" class="h-[3rem] bg-primary">
-				<img src="/socialMedia/stackoverflow.svg" alt="stack overflow logo" class="h-[3rem] bg-primary">
+			<div class="grid grid-cols-3 place-items-center mx-[2rem] px-[5rem] gap-[2rem]">
+				<img src="/socialMedia/linkedin.svg" alt="linkedin logo" class="h-[3rem] p-[.5rem] bg-primary transition-all hover:h-[3.5rem] hover:p-0">
+				<img src="/socialMedia/github.svg" alt="github logo" class="h-[3rem] p-[.5rem] bg-primary transition-all hover:h-[3.5rem] hover:p-0">
+				<img src="/socialMedia/stackoverflow.svg" alt="stack overflow logo" class="h-[3rem] p-[.5rem] bg-primary transition-all hover:h-[3.5rem] hover:p-0">
 			</div>
 
 		</footer>
@@ -86,6 +80,8 @@ const { title } = Astro.props;
 	</body>
 </html>
 
+
+<!---------- JAVASCRIPT --------------->
 <script>
 	let button = document.querySelector('header button');
 	let navbar = document.querySelector('nav');

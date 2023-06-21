@@ -1,6 +1,7 @@
 ---
 import MainLayout from '../layouts/Layout.astro'
 import Stack from '../components/Stack.astro'
+import Projects from '../components/Projects.astro'
 ---
 
 <MainLayout title="Ezequiel Cachi - Home">
@@ -33,15 +34,15 @@ import Stack from '../components/Stack.astro'
 
 <Stack />
 
-
+<Projects />
 
 
 <script>
   const downloadButton = document.getElementById('downloadButton');
 
   downloadButton.addEventListener('click', () => {
-    const fileUrl = '/resume.pdf';
-    const fileName = 'resume.pdf';
+    const fileUrl = '/Resume.pdf';
+    const fileName = 'Resume.pdf';
 
     const link = document.createElement('a');
     link.href = fileUrl;
