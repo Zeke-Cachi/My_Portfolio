@@ -22,9 +22,9 @@
         <h2 class="text-center text-[5rem] text-primary font-bold">Calculadora de costos grupales</h2>
       </div>
 
-      <div class="grid grid-cols-11 absolute place-items-center top-0 left-0 w-[100%] h-[100%] bg-mainbg border-white rounded-lg custom-rotate">
-        <div class="bg-calculator w-[100%] h-[100%] col-span-6 bg-cover bg-no-repeat border-e-[2px] border-b-white"></div>
-        <div class="w-[100%] h-[100%] col-span-5 flex flex-col justify-center px-[3rem] bg-secondary">
+      <div class="grid grid-cols-10 absolute place-items-center top-0 left-0 w-[100%] h-[100%] bg-mainbg border-white rounded-lg custom-rotate">
+        <div class="bg-calculator w-[100%] h-[100%] col-span-4 bg-center bg-cover bg-no-repeat border-e-[2px] border-b-white"></div>
+        <div class="w-[100%] h-[100%] col-span-6 flex flex-col justify-center px-[3rem] bg-secondary">
           <h3 class="font-raleway text-[2.5rem] text-primary">Calculadora de costos grupales</h3>
           <p class="mt-[1rem] text-[1rem] font-Roboto">WebApp para dividir de modo equitativo los costos entre un grupo de personas. Se elige la cantidad de participantes, se coloca el nombre en cada tarjeta, y se va ingresando
             el producto, costo, y personas que lo consumieron, devolviendo el monto exacto que debe abonar cada uno. Hecha con Next.js y Tailwind, manejada solamente con useState y useEffect,
@@ -48,10 +48,10 @@
 
   <div class="flex justify-around px-[11rem]">
     <!---------------- MOVIE DATABASE CARD ---------------->
-    <div class="grid grid-row-2 px-[2rem] place-items-center custom-perspective cursor-pointer">
+    <div class=" px-[2rem] custom-perspective cursor-pointer">
 
       <div 
-        class="w-[25rem] h-[42rem] border-[2px] border-white rounded-lg mb-[3rem] grid grid-rows-2 place-items-center relative transition-all 
+        class="w-[25rem] h-[42rem] border-[2px] border-white rounded-lg mb-[3rem] relative transition-all 
       duration-500 card hover:shadow-solidOrange" 
         id="movieCard">
 
@@ -59,7 +59,7 @@
           <h2 class="text-center text-[5rem] text-primary font-bold">Movie Database</h2>
         </div>
 
-        <div class="flex flex-col justify-center items-center absolute place-items-center top-0 left-0 w-[100%] h-[100%] bg-mainbg border-white rounded-lg custom-rotate">
+        <div class="flex flex-col justify-center items-center absolute top-0 left-0 w-[100%] h-[100%] bg-mainbg border-white rounded-lg custom-rotate overflow-hidden">
           <div class="bg-database w-[100%] h-[100%] bg-cover bg-no-repeat bg-center border-b-[2px] border-b-white"></div>
           <div class="w-[100%] h-[100%] flex flex-col justify-center p-[1rem] bg-secondary">
             <h3 class="font-raleway text-[2rem] text-primary text-center">Movie Database</h3>
@@ -83,10 +83,10 @@
     </div>
 
     <!---------------- MUSIC STORE STOCK EDITOR CARD ---------------->
-    <div class="grid grid-row-2 px-[2rem] place-items-center custom-perspective cursor-pointer">
+    <div class="px-[2rem] place-items-center custom-perspective cursor-pointer">
 
       <div 
-        class="w-[25rem] h-[42rem] border-[2px] border-white rounded-lg mb-[3rem] grid grid-rows-2 place-items-center relative transition-all 
+        class="w-[25rem] h-[42rem] border-[2px] border-white rounded-lg mb-[3rem] relative transition-all 
       duration-500 card hover:shadow-solidOrange" 
         id="musicStore">
 
@@ -94,7 +94,7 @@
           <h2 class="text-center text-[4rem] text-primary font-bold">Editor de datos (tienda musical)</h2>
         </div>
 
-        <div class="flex flex-col justify-center items-center absolute place-items-center top-0 left-0 w-[100%] h-[100%] bg-mainbg border-white rounded-lg custom-rotate overflow-hidden">
+        <div class="flex flex-col justify-center items-center top-0 left-0 w-[100%] h-[100%] bg-mainbg border-white rounded-lg custom-rotate overflow-hidden">
           <div class="bg-musicStore w-[100%] h-[100%] bg-cover bg-no-repeat bg-center border-b-[2px] border-b-white"></div>
           <div class="w-[100%] h-[100%] flex flex-col justify-center p-[1rem] bg-secondary">
             <h3 class="font-raleway text-[2rem] text-primary text-center">Editor de stock</h3>
@@ -159,6 +159,41 @@
       
     </div>
   </div>
+
+  <!---------------- WEATHER APP CARD ---------------->
+  <div class="grid grid-cols-2 px-[2rem] place-items-center custom-perspective cursor-pointer">
+
+    <div 
+      class="col-span-2 w-[90rem] h-[30rem] border-[2px] border-white rounded-lg mb-[5rem] grid place-items-center relative transition-all 
+    duration-500 card hover:shadow-solidOrange" 
+      id="weather">
+
+      <div class="absolute top-0 left-0 w-[100%] h-[100%] bg-mainbg grid place-items-center border-white rounded-lg px-[1rem]">
+        <h2 class="text-center text-[5rem] text-primary font-bold">App de clima</h2>
+      </div>
+
+      <div class="grid grid-cols-10 absolute place-items-center top-0 left-0 w-[100%] h-[100%] bg-mainbg border-white rounded-lg custom-rotate">
+        <div class="bg-weather w-[100%] h-[100%] col-span-4 bg-center bg-cover bg-no-repeat border-e-[2px] border-b-white"></div>
+        <div class="w-[100%] h-[100%] col-span-6 flex flex-col justify-center px-[3rem] bg-secondary">
+          <h3 class="font-raleway text-[2.5rem] text-primary">Weather App</h3>
+          <p class="mt-[1rem] text-[1rem] font-Roboto">Uno de mis primeros proyectos en Javascript, una aplicación para buscar el clima de cualquier ciudad, usando la API de 
+            OpenWeather, junto con JS puro y CSS.
+          </p>
+          <p class="mt-[1rem] font-Roboto italic">Podes ver el código 
+            <a 
+              href="https://github.com/Zeke-Cachi/JS_Weather_App" 
+              class="font-bold text-primary hover:text-white"
+              target="_blank" rel="noopener noreferrer">acá</a></p>
+          <p class="mt-[1rem] font-Roboto italic">Podes ver el deploy 
+            <a 
+              href="https://zeke-cachi.github.io/JS_Weather_App/" 
+              class="font-bold text-primary hover:text-white"
+              target="_blank" rel="noopener noreferrer">acá</a></p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
 </section>
 
 
@@ -189,6 +224,7 @@ const calculatorCard = document.getElementById('calculatorCard') as HTMLElement;
 const movieDatabaseCard = document.getElementById('movieCard') as HTMLElement;
 const musicStoreCard = document.getElementById('musicStore') as HTMLElement;
 const portfolioCard = document.getElementById('portfolio') as HTMLElement;
+const weatherCard = document.getElementById('weather') as HTMLElement;
 
 
 calculatorCard.addEventListener('click', () => {
@@ -205,5 +241,9 @@ musicStoreCard.addEventListener('click', () => {
 
 portfolioCard.addEventListener('click', () => {
   portfolioCard.classList.toggle('flipped');
+});
+
+weatherCard.addEventListener('click', () => {
+  weatherCard.classList.toggle('flipped');
 })
 </script>

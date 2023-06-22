@@ -21,7 +21,8 @@ module.exports = {
 				calculator: 'url("/projects/check-splitter-2.png")',
 				database: 'url("/projects/movie-database.png")',
 				musicStore: 'url("/projects/music-store.png")',
-				portfolio: 'url("/projects/portfolio.png")'
+				portfolio: 'url("/projects/portfolio.png")',
+				weather: 'url("/projects/weather-app.png")',
 			},
 			width: {
 				'calc': 'calc(11rem * 12)'
