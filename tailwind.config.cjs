@@ -40,6 +40,10 @@ module.exports = {
 					'0%': {width: '0%'},
 					'100%': {width: '100%'}
 				},
+				aboutStretch: {
+					'0%': {width: '0%'},
+					'100%': {width: '98%'}
+				},
 				slideIn: {
 					'0%': {opacity: '0', transform: 'translateX(2rem)'},
 					'100%': {opacity: '1', transform: 'translateX(0rem)'},
@@ -62,6 +66,7 @@ module.exports = {
 			animation: {
         'appear': 'showUp 500ms ease-in-out',
 				'line': 'stretch 250ms ease-in-out',
+				'aboutLine': 'aboutStretch 1s ease-in-out',
 				'headerBottom': 'stretch 1s ease-in-out',
 				'slideFromRight': 'slideIn 1.5s ease-in',
 				'h1Slide': 'slideUp 500ms ease-in',
