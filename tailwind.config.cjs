@@ -61,18 +61,31 @@ module.exports = {
 				stackSlide: {
 					'0%': {transform: 'translateX(0)'},
 					'100%': {transform: 'translateX(-100%)'}
+				},
+				pulse: {
+					'0%': {transform: 'scale(1)'},
+					'50%': {transform: 'scale(1.2)'},
+					'100%': {transform: 'scale(1)'}
 				}
       },
 			animation: {
         'appear': 'showUp 500ms ease-in-out',
 				'line': 'stretch 250ms ease-in-out',
 				'aboutLine': 'aboutStretch 1s ease-in-out',
+				'contactLine': 'stretch 1.5s ease-in-out',
 				'headerBottom': 'stretch 1s ease-in-out',
 				'slideFromRight': 'slideIn 1.5s ease-in',
 				'h1Slide': 'slideUp 500ms ease-in',
 				'pSlide': 'slideUp 1s ease-in',
+				'formName': 'buttonShow 1s ease-in',
+				'formLastname': 'buttonShow 1.2s ease-in',
+				'formPhone': 'buttonShow 1.4s ease-in',
+				'formEmail': 'buttonShow 1.6s ease-in',
+				'formCommentary': 'buttonShow 1.8s ease-in',
+				'formButton': 'buttonShow 2s ease-in',
 				'button': 'buttonShow 1.5s ease-in',
-				'stack': 'stackSlide 30s infinite linear'
+				'stack': 'stackSlide 30s infinite linear',
+				'pulsing': 'pulse 2s infinite'
       },
 			boxShadow: {
 				'solidOrange': '0 0 0 2px #fa8500',

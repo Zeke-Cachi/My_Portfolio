@@ -25,11 +25,15 @@ import Projects from '../components/Projects.astro'
 
 <div class="ms-[8rem] flex justify-center w-[30%] animate-button">
   <button class="w-[12rem] h-[3rem] bg-primary text-black font-bold text-[1.2rem] 
-  rounded-lg me-[4rem] hover:bg-white hover:text-primary shadow-inner shadow-solidOrange transition-all"
+  rounded-lg me-[4rem] hover:bg-white hover:text-primary shadow-inner shadow-solidOrange transition-all
+  active:bg-primary"
   id="downloadButton">Descargar CV</button>
   
   <button class="w-[12rem] h-[3rem] bg-white text-black font-bold text-[1.2rem] 
-  rounded-lg me-[2rem] hover:bg-primary hover:text-white shadow-inner shadow-solidWhite transition-all">Contactame</button>
+  rounded-lg me-[2rem] hover:bg-primary hover:text-white shadow-inner shadow-solidWhite transition-all
+  active:bg-secondary">
+    <a href="/contact"> Contactame</a>
+  </button>
 </div>
 
 <Stack />

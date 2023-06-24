@@ -1,0 +1,134 @@
+---
+import MainLayout from '../layouts/Layout.astro';
+//import Toastify from 'toastify-js';
+---
+
+<MainLayout title="Ezequiel Cachi - Contacto">
+
+<section class="px-[2rem]">
+  <div class="w-[22.5rem] ms-[6rem] mb-[5rem] animate-appear">
+    <h1 class="text-[4rem] font-raleway">Contactame</h1>
+    <hr class="text-primary animate-contactLine mt-[-1rem]">
+  </div>
+
+  <div class="px-[8rem] flex justify-between">
+    <form 
+      id="contact-form"
+      class="flex flex-col mt-[5rem] ms-[8rem] mb-[5rem] w-[25rem]"
+      action="https://formspree.io/f/mdornkdg"
+      method="POST">
+      <label 
+        for="name"
+        class="mb-[.2rem] italic animate-formName">Nombre</label>
+      <input 
+        autocomplete="off"
+        required
+        id="name"
+        type="text"
+        name="name"
+        class="mb-[3rem] 2xl:w-[25rem] 2xl:min-h-[2rem] rounded-md bg-secondary border-[1px] border-primary text-white px-[.5rem]
+        hover:border-white active:border-white active:bg-secondary outline-none custom-autofill animate-formName placeholder:secondary">
+
+      <label 
+        for="lastname"
+        class="mb-[.2rem] italic animate-formLastname">Apellido</label>
+      <input 
+        autocomplete="off"
+        required
+        id="lastname"
+        type="text"
+        name="lastname"
+        class="mb-[3rem] 2xl:w-[25rem] 2xl:min-h-[2rem] rounded-md bg-secondary border-[1px] border-primary text-white px-[.5rem]
+        hover:border-white active:border-white active:bg-secondary outline-none custom-autofill animate-formLastname">
+
+        <label 
+        for="phone"
+        class="mb-[.2rem] italic animate-formLastname">Teléfono (opcional)</label>
+      <input 
+        autocomplete="off"
+        id="phone"
+        type="tel"
+        name="phone"
+        class="mb-[3rem] 2xl:w-[25rem] 2xl:min-h-[2rem] rounded-md bg-secondary border-[1px] border-primary text-white px-[.5rem]
+        hover:border-white active:border-white active:bg-secondary outline-none custom-autofill animate-formPhone">
+
+      <label 
+        for="email"
+        class="mb-[.2rem] italic animate-formEmail">Email</label>
+      <input 
+        autocomplete="off"
+        required
+        id="email"
+        type="email"
+        name="email"
+        class="mb-[3rem] 2xl:w-[25rem] 2xl:min-h-[2rem] rounded-md bg-secondary border-[1px] border-primary text- active:bg-secondary px-[.5rem]
+        hover:border-white active:border-white active:bg-secondary outline-none custom-autofill animate-formEmail">
+
+      <label 
+        for="commentary"
+        class="mb-[.2rem] italic animate-formCommentary">Comentario</label>
+      <textarea 
+        autocomplete="off"
+        required
+        id="commentary"
+        name="commentary"
+        class="mb-[3rem] 2xl:w-[25rem] 2xl:min-h-[10rem] rounded-md bg-secondary border-[1px] border-primary text-white pb-[8rem] 
+        px-[.5rem] hover:border-white active:border-white outline-none custom-autofill active:bg-secondary animate-formCommentary">
+      </textarea>
+
+
+      <button 
+        type="submit"
+        class="w-[12rem] h-[3rem] bg-primary text-black font-bold text-[1.2rem] 
+        rounded-lg me-[4rem] hover:bg-white hover:text-primary shadow-inner shadow-solidOrange transition-all animate-formButton
+        active:bg-secondary"
+        >Enviar
+      </button>
+    </form>
+
+    <div class="w-[100%] px-[8rem] pt-[5rem] animate-formName">
+      <div class="flex justify-center items-center px-[3rem] mb-[5rem] my-[3rem]">
+        <a 
+          href="https://www.linkedin.com/in/ezequiel-cachi-8a439b124/"
+          class="w-[3rem] h-[3rem] me-[1rem] cursor-pointer">
+          <img 
+            src="/socialMedia/linkedin.svg" 
+            alt="linkedin logo"
+            class="bg-primary animate-pulsing">
+        </a>
+        <p class="text-[3rem] font-raleway">Linkedin</p>
+      </div>
+
+      <hr class="w-[70%] text-secondary h-[5px] text-center mx-auto animate-formLastname my-[3rem]">
+
+      <div class="flex justify-center items-center px-[3rem] my-[5rem] animate-formEmail my-[3rem]">
+        <a 
+          href="mailto:ezequielcachi@gmail.com"
+          class="w-[3rem] h-[3rem] me-[1rem] cursor-pointer">
+          <img 
+            src="/socialMedia/gmail.svg" 
+            alt="linkedin logo"
+            class="bg-primary animate-pulsing border-[3px] border-[#000]">
+        </a>
+        <p class="text-[3rem] font-raleway">Gmail</p>
+      </div>
+    </div>
+
+  </div>
+  
+</section>
+
+<script>
+  window.onload = () => {
+
+    document.forms.reset();
+  };
+</script>
+
+<style>
+.custom-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #545454 inset;
+  -webkit-text-fill-color: #ffff;
+}
+
+</style>
