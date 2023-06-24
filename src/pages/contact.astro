@@ -97,7 +97,7 @@ import MainLayout from '../layouts/Layout.astro';
       </button>
     </form>
 
-    <div class="w-[100%] md:pt-[1rem] md:mt-[3rem] xl:mt-0 xl:pt-0 animate-formName flex justify-center items-center xl:block">
+    <div class="w-[100%] md:pt-[1rem] md:mt-[3rem] xl:mt-0 xl:pt-0 animate-formName flex justify-center items-center xl:block mb-[5rem]">
       <div class="flex flex-col xl:flex-row justify-center items-center mx-[3rem] xl:px-[3rem] xl:mb-[5rem] my-[3rem]">
         <a 
           href="https://www.linkedin.com/in/ezequiel-cachi-8a439b124/"
@@ -131,11 +131,12 @@ import MainLayout from '../layouts/Layout.astro';
 
 <script>
   window.onload = () => {
-
     document.forms.reset();
   };
 </script>
 
+
+<!-- THIS OVERRIDES THE DEFAULT CHROME AUTOFILL STYLE -->
 <style>
 .custom-autofill {
   -webkit-box-shadow: 0 0 0px 1000px #545454 inset;
