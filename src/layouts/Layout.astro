@@ -21,8 +21,8 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 
-	<body class="bg-mainbg text-white font-roboto overflow-x-hidden">
-		<header class="flex justify-between items-center w-[100%] p-[1rem]">
+	<body class="bg-mainbg text-white font-roboto overflow-x-hidden w-screen">
+		<header class="flex justify-between items-center p-[1rem]">
 			<a href="/">
 				<img src="/logo.png" alt="" class="pt-[.7rem] w-[4rem] ms-[1rem]">
 			</a>
@@ -48,44 +48,44 @@ const { title } = Astro.props;
 
 			<button
 				class="h-[4rem] mx-[1rem] md:hidden">
-				<div class="w-[2.5rem] h-[.3rem] bg-white my-[.2rem] rounded-xl"></div>
-				<div class="w-[2rem] h-[.3rem] bg-white my-[.2rem] rounded-xl"></div>
-				<div class="w-[1.5rem] h-[.3rem] bg-white my-[.2rem] rounded-xl"></div>
+				<div class="w-[3rem] h-[.3rem] bg-white mb-[.4rem] rounded-xl"></div>
+				<div class="w-[2.4rem] h-[.3rem] bg-white my-[.4rem] rounded-xl"></div>
+				<div class="w-[1.9rem] h-[.3rem] bg-white mt-[.4rem] rounded-xl"></div>
 			</button>
 
 		</header>
-		<hr class="w-[100%] text-secondary animate-headerBottom mx-auto mb-[3rem]">
+		<hr class="text-secondary animate-headerBottom mx-auto mb-[3rem]">
 
 		<slot />
 
-		<footer class="border-t-[1px] border-t-secondary h-[10rem] grid grid-cols-3 place-items-center w-screen px-[1rem]">
+		<footer class="border-t-[1px] border-t-secondary h-[10rem] grid grid-cols-2 lg:grid-cols-3 place-items-center px-[1rem]">
 			<div>
 				<h5 class="ms-[1rem] mb-[.4rem]">Página hecha por Ezequiel Cachi</h5>
 				<h6 class="ms-[1rem] text-secondary text-[.9rem]">® Zeke-Cachi 2023</h6>
 			</div>
 
-			<img src="./logo.png" alt="logo del footer" class="h-[7rem]">
+			<img src="./logo.png" alt="logo del footer" class="h-[7rem] hidden lg:block">
 			
-			<div class="flex justify-around mx-[2rem] w-[100%] px-[9rem]">
+			<div class="flex flex-col sm:flex-row justify-around ms-[4rem] sm:mx-[2rem] xl:px-[7rem] 2xl:px-[9rem]">
 				<a href="https://www.linkedin.com/in/ezequiel-cachi-8a439b124/" target="_blank" rel="noopener noreferrer">
 					<img 
 					src="/socialMedia/linkedin.svg" 
 					alt="linkedin logo" 
-					class="h-[3rem] p-[.5rem] bg-primary transition-all hover:p-0 cursor-pointer">
+					class="h-[2rem] p-[0.3rem] sm:h-[3rem] my-[.1rem] sm:m-[.5rem] bg-primary transition-all hover:p-0 cursor-pointer">
 				</a>
 				
 				<a href="https://github.com/Zeke-Cachi" target="_blank" rel="noopener noreferrer">
 					<img 
 					src="/socialMedia/github.svg" 
 					alt="github logo" 
-					class="h-[3rem] p-[.5rem] bg-primary transition-all hover:p-0 cursor-pointer">
+					class="h-[2rem] p-[0.3rem] sm:h-[3rem] my-[.1rem] sm:m-[.5rem] bg-primary transition-all hover:p-0 cursor-pointer">
 				</a>
 
 				<a href="https://stackoverflow.com/users/21198309/zeke-cachi" target="_blank" rel="noopener noreferrer">
 					<img 
 					src="/socialMedia/stackoverflow.svg" 
 					alt="stack overflow logo" 
-					class="h-[3rem] p-[.5rem] bg-primary transition-all hover:p-0 cursor-pointer">
+					class="h-[2rem] p-[0.3rem] sm:h-[3rem] my-[.1rem] sm:m-[.5rem] bg-primary transition-all hover:p-0 cursor-pointer">
 				</a>
 			</div>
 

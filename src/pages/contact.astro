@@ -6,111 +6,122 @@ import MainLayout from '../layouts/Layout.astro';
 <MainLayout title="Ezequiel Cachi - Contacto">
 
 <section class="px-[2rem]">
-  <div class="w-[22.5rem] ms-[6rem] mb-[5rem] animate-appear">
-    <h1 class="text-[4rem] font-raleway">Contactame</h1>
-    <hr class="text-primary animate-contactLine mt-[-1rem]">
+  <div class="w-[11.5rem] md:w-[18.1rem] lg:w-[20rem] xl:w-[22.5rem] md:ms-[6rem] mb-[2rem] animate-appear">
+    <h1 class="text-[2rem] md:text-[3.2rem] lg:text-[3.5rem] xl:text-[4rem] font-raleway">Contactame</h1>
+    <hr class="text-primary animate-contactLine mt-[-.5rem] md:mt-[-1rem]">
   </div>
 
-  <div class="px-[8rem] flex justify-between">
+  <div class="w-[100%] md:px-[3rem] xl:px-[6rem] 2xl:px-[8rem] flex flex-col xl:flex-row justify-between items-center">
     <form 
       id="contact-form"
-      class="flex flex-col mt-[5rem] ms-[8rem] mb-[5rem] w-[25rem]"
+      class="flex flex-col md:grid md:grid-cols-2 md:grid-rows-7 place-items-center xl:flex xl:flex-col xl:items-centermd:mt-[2rem] 
+      xl:mt-[2rem] xl:ms-[8rem] md:mb-[1rem] xl:mb-[5rem] md:w-[90%] xl:w-[25rem]"
       action="https://formspree.io/f/mdornkdg"
       method="POST">
-      <label 
-        for="name"
-        class="mb-[.2rem] italic animate-formName">Nombre</label>
-      <input 
-        autocomplete="off"
-        required
-        id="name"
-        type="text"
-        name="name"
-        class="mb-[3rem] 2xl:w-[25rem] 2xl:min-h-[2rem] rounded-md bg-secondary border-[1px] border-primary text-white px-[.5rem]
-        hover:border-white active:border-white active:bg-secondary outline-none custom-autofill animate-formName placeholder:secondary">
 
-      <label 
-        for="lastname"
-        class="mb-[.2rem] italic animate-formLastname">Apellido</label>
-      <input 
-        autocomplete="off"
-        required
-        id="lastname"
-        type="text"
-        name="lastname"
-        class="mb-[3rem] 2xl:w-[25rem] 2xl:min-h-[2rem] rounded-md bg-secondary border-[1px] border-primary text-white px-[.5rem]
-        hover:border-white active:border-white active:bg-secondary outline-none custom-autofill animate-formLastname">
-
+      <div class="flex flex-col md:row-span-2 my-[1rem] xl:py-0 ">
         <label 
-        for="phone"
-        class="mb-[.2rem] italic animate-formLastname">Teléfono (opcional)</label>
-      <input 
-        autocomplete="off"
-        id="phone"
-        type="tel"
-        name="phone"
-        class="mb-[3rem] 2xl:w-[25rem] 2xl:min-h-[2rem] rounded-md bg-secondary border-[1px] border-primary text-white px-[.5rem]
-        hover:border-white active:border-white active:bg-secondary outline-none custom-autofill animate-formPhone">
+          for="name"
+          class="mb-[.2rem] italic animate-formName">Nombre</label>
+        <input 
+          autocomplete="off"
+          required
+          id="name"
+          type="text"
+          name="name"
+          class="md:mb-[1rem] xl:mb-[0] w-[15rem] sm:w-[20rem] md:w-[15rem] xl:w-[25rem] xl:h-[2rem] rounded-md bg-secondary border-[1px] border-primary text-white px-[.5rem]
+          hover:border-white active:border-white active:bg-secondary outline-none custom-autofill animate-formName placeholder:secondary">
+      </div>
 
-      <label 
-        for="email"
-        class="mb-[.2rem] italic animate-formEmail">Email</label>
-      <input 
-        autocomplete="off"
-        required
-        id="email"
-        type="email"
-        name="email"
-        class="mb-[3rem] 2xl:w-[25rem] 2xl:min-h-[2rem] rounded-md bg-secondary border-[1px] border-primary text- active:bg-secondary px-[.5rem]
-        hover:border-white active:border-white active:bg-secondary outline-none custom-autofill animate-formEmail">
+      <div class="flex flex-col md:row-span-2 my-[1rem] xl:py-0">
+        <label 
+          for="lastname"
+          class="mb-[.2rem] italic animate-formLastname">Apellido</label>
+        <input 
+          autocomplete="off"
+          required
+          id="lastname"
+          type="text"
+          name="lastname"
+          class="md:mb-[1rem] xl:mb-[0] w-[15rem] sm:w-[20rem] md:w-[15rem] xl:w-[25rem] xl:h-[2rem] rounded-md bg-secondary border-[1px] border-primary text-white px-[.5rem]
+          hover:border-white active:border-white active:bg-secondary outline-none custom-autofill animate-formLastname">
+      </div>
 
-      <label 
-        for="commentary"
-        class="mb-[.2rem] italic animate-formCommentary">Comentario</label>
-      <textarea 
-        autocomplete="off"
-        required
-        id="commentary"
-        name="commentary"
-        class="mb-[3rem] 2xl:w-[25rem] 2xl:min-h-[10rem] rounded-md bg-secondary border-[1px] border-primary text-white pb-[8rem] 
-        px-[.5rem] hover:border-white active:border-white outline-none custom-autofill active:bg-secondary animate-formCommentary">
-      </textarea>
+      <div class="flex flex-col md:row-span-2 my-[1rem] xl:py-0">
+        <label 
+          for="phone"
+          class="mb-[.2rem] italic animate-formLastname">Teléfono (opcional)</label>
+        <input 
+          autocomplete="off"
+          id="phone"
+          type="tel"
+          name="phone"
+          class="md:mb-[1rem] xl:mb-[0] w-[15rem] sm:w-[20rem] md:w-[15rem] xl:w-[25rem] xl:h-[2rem] rounded-md bg-secondary border-[1px] border-primary text-white px-[.5rem]
+          hover:border-white active:border-white active:bg-secondary outline-none custom-autofill animate-formPhone">
+      </div>
 
+      <div class="flex flex-col my-[1rem] xl:py-0">
+        <label 
+          for="email"
+          class="mb-[.2rem] italic animate-formEmail">Email</label>
+        <input 
+          autocomplete="off"
+          required
+          id="email"
+          type="email"
+          name="email"
+          class="md:mb-[1rem] xl:mb-[0] w-[15rem] sm:w-[20rem] md:w-[15rem] xl:w-[25rem] xl:h-[2rem] rounded-md bg-secondary border-[1px] border-primary text- active:bg-secondary px-[.5rem]
+          hover:border-white active:border-white active:bg-secondary outline-none custom-autofill animate-formEmail">
+      </div>
+
+      <div class="flex flex-col col-span-2 my-[1rem] xl:py-0">
+        <label 
+          for="commentary"
+          class="mb-[.2rem] italic animate-formCommentary">Comentario</label>
+        <textarea 
+          autocomplete="off"
+          required
+          id="commentary"
+          name="commentary"
+          class="md:mb-[1rem] md:mb-[1rem] xl:mb-[0] w-[15rem] sm:w-[20rem] md:w-[30rem] md:h-[10rem] xl:w-[25rem] xl:h-[10rem] rounded-md bg-secondary border-[1px] border-primary text-white pb-[8rem] 
+          px-[.5rem] hover:border-white active:border-white outline-none custom-autofill active:bg-secondary animate-formCommentary">
+        </textarea>
+      </div>
 
       <button 
         type="submit"
-        class="w-[12rem] h-[3rem] bg-primary text-black font-bold text-[1.2rem] 
-        rounded-lg me-[4rem] hover:bg-white hover:text-primary shadow-inner shadow-solidOrange transition-all animate-formButton
-        active:bg-secondary"
+        class="w-[7rem] h-[2.2rem] md:w-[9rem] md:text-[1rem] xl:w-[11rem] xl:h-[2.5rem] xl:w-[12rem] xl:h-[3rem] bg-primary text-black font-bold text-[1.2rem] 
+        rounded-xl md:mx-auto md:self-start hover:bg-white hover:text-primary shadow-inner shadow-solidOrange transition-all animate-formButton
+        active:bg-secondary col-span-2"
         >Enviar
       </button>
     </form>
 
-    <div class="w-[100%] px-[8rem] pt-[5rem] animate-formName">
-      <div class="flex justify-center items-center px-[3rem] mb-[5rem] my-[3rem]">
+    <div class="w-[100%] md:pt-[1rem] md:mt-[3rem] xl:mt-0 xl:pt-0 animate-formName flex justify-center items-center xl:block">
+      <div class="flex flex-col xl:flex-row justify-center items-center mx-[3rem] xl:px-[3rem] xl:mb-[5rem] my-[3rem]">
         <a 
           href="https://www.linkedin.com/in/ezequiel-cachi-8a439b124/"
-          class="w-[3rem] h-[3rem] me-[1rem] cursor-pointer">
+          class="w-[3rem] h-[3rem] xl:me-[1rem] mb-[.5rem] cursor-pointer">
           <img 
             src="/socialMedia/linkedin.svg" 
             alt="linkedin logo"
             class="bg-primary animate-pulsing">
         </a>
-        <p class="text-[3rem] font-raleway">Linkedin</p>
+        <p class="md:text-[1.5rem] xl:text-[2.5rem] 2xl:text-[3rem] font-raleway">Linkedin</p>
       </div>
 
-      <hr class="w-[70%] text-secondary h-[5px] text-center mx-auto animate-formLastname my-[3rem]">
+      <hr class="hidden xl:block w-[70%] text-secondary h-[5px] text-center mx-auto animate-formLastname my-[3rem]">
 
-      <div class="flex justify-center items-center px-[3rem] my-[5rem] animate-formEmail my-[3rem]">
+      <div class="flex flex-col xl:flex-row justify-center items-center mx-[3rem] xl:px-[3rem] my-[5rem] my-[3rem]">
         <a 
           href="mailto:ezequielcachi@gmail.com"
-          class="w-[3rem] h-[3rem] me-[1rem] cursor-pointer">
+          class="w-[3rem] h-[3rem] xl:me-[1rem] mb-[.5rem] cursor-pointer">
           <img 
             src="/socialMedia/gmail.svg" 
             alt="linkedin logo"
-            class="bg-primary animate-pulsing border-[3px] border-[#000]">
+            class="bg-primary animate-pulsing border-[3px] border-[#000] animate-formEmail">
         </a>
-        <p class="text-[3rem] font-raleway">Gmail</p>
+        <p class="md:text-[1.5rem] xl:text-[2.5rem] 2xl:text-[3rem] font-raleway">Gmail</p>
       </div>
     </div>
 
