@@ -52,9 +52,15 @@ const { title } = Astro.props;
 
 			<button
 				class="h-[4rem] mx-[1rem] md:hidden">
-				<div class="w-[3rem] h-[.3rem] bg-white mb-[.4rem] rounded-xl"></div>
-				<div class="w-[2.4rem] h-[.3rem] bg-white my-[.4rem] rounded-xl"></div>
-				<div class="w-[1.9rem] h-[.3rem] bg-white mt-[.4rem] rounded-xl"></div>
+				<div 
+					class="w-[3rem] h-[.3rem] bg-white mb-[.4rem] rounded-xl transition-all"
+					id="long-line"></div>
+				<div 
+					class="w-[2.4rem] h-[.3rem] bg-white my-[.4rem] rounded-xl transition-all"
+					id="middle-line"></div>
+				<div 
+					class="w-[1.9rem] h-[.3rem] bg-white mt-[.4rem] rounded-xl transition-all"
+					id="short-line"></div>
 			</button>
 
 		</header>
@@ -103,9 +109,19 @@ const { title } = Astro.props;
 <script>
 	let button = document.querySelector('header button');
 	let navbar = document.querySelector('nav');
-	let list = document.querySelector('ul')
+	let longLine = document.getElementById('long-line');
+	let middleLine = document.getElementById('middle-line');
+	let shortLine = document.getElementById('short-line');
+
 
 	button?.addEventListener('click', (e:any)=> {
+		middleLine?.classList.toggle('opacity-0');
+		longLine?.classList.toggle("rotate-[-45deg]");
+		longLine?.classList.toggle("translate-y-[.4rem]");
+		shortLine?.classList.toggle('rotate-[45deg]');
+		shortLine?.classList.toggle('translate-y-[-1rem]');
+		shortLine?.classList.toggle('w-[3rem]');
+
 		if ( navbar?.classList.contains('opacity-0') ) {
 			navbar?.classList.remove('opacity-0');
 			navbar?.classList.add('opacity-100');
@@ -114,6 +130,5 @@ const { title } = Astro.props;
 			navbar?.classList.add('opacity-0');
 		}
 	})
-
 </script>
 
