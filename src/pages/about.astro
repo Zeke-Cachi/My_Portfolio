@@ -5,15 +5,15 @@ import MainLayout from '../layouts/Layout.astro'
 <MainLayout title="Ezequiel Cachi - Sobre mi">
 
 <section class="px-[2rem]">
-  <div class="w-[17rem] ms-[6rem] mb-[5rem] animate-appear">
-    <h1 class="text-[4rem] font-raleway">Sobre mi</h1>
-    <hr class="text-primary animate-aboutLine mt-[-1rem] w-[98%]">
+  <div class="w-[10.7rem] sm:w-[12.8rem] md:w-[17rem] sm:ms-[6rem] mb-[5rem] animate-appear">
+    <h1 class="text-[2.5rem] sm:text-[3rem] md:text-[4rem] font-raleway">Sobre mi</h1>
+    <hr class="text-primary animate-aboutLine mt-[-.7rem] sm:mt-[-1rem] w-[98%]">
   </div>
 <!------------- INICIOS EN PROGRAMACIÓN ------------->
-  <h3 class="text-[2rem] ms-[5rem] before:content-['#'] before:text-primary animate-h1Slide mb-[3rem] text-raleway"> Mis inicios en la programación</h3>
+  <h3 class="text-[1.2rem] sm:text-[1.5rem] md:text-[2rem] lg:ms-[5rem] before:content-['#'] before:text-primary animate-h1Slide mb-[3rem] text-raleway"> Mis inicios en la programación</h3>
 
-  <div class="flex items-center justify-around mb-[5rem]">
-    <p class="animate-pSlide text-[1.3rem] pe-[8rem] ms-[5rem] font-light text-roboto">Mi primer contacto con la programación comenzó en el año 2022, cuando ingresé a la carrera de Ingeniería de sistemas en la UTN. 
+  <div class="flex flex-col lg:flex-row items-center justify-around mb-[5rem]">
+    <p class="animate-pSlide text-[1rem] sm:text-[1.1rem] md:text-[1.3rem] lg:pe-[8rem] lg:ms-[5rem] font-light text-roboto mb-[2rem] lg:mb-0">Mi primer contacto con la programación comenzó en el año 2022, cuando ingresé a la carrera de Ingeniería de sistemas en la UTN. 
         Allí comencé a aprender algoritmos y estructuras de datos, primero con diagramas (Chapín), y luego programando con Python, debiendo efectuar desde ejercicios sencillos hasta
         programas complejos, con gran variedad de variables, y manejo de punteros.
     </p>
@@ -21,31 +21,47 @@ import MainLayout from '../layouts/Layout.astro'
     <img 
       src="/about/pic-1.png" 
       alt="chapin diagram image"
-      class="rounded-full h-[30rem] border-[3px] border-secondary me-[5rem] animate-slideFromRight">
+      class="object-cover rounded-md lg:rounded-full h-[20rem] w-[50rem] lg:h-[30rem] border-[3px] border-secondary lg:me-[5rem] animate-slideFromRight">
+  </div>
+
+  <div class="flex justify-center items-center mt-[2rem] lg:mt-[8rem] w-[100%] mb-[5rem]">
+    <hr class="w-[35rem] text-secondary">
+    <span class="text-primary ms-[1rem] text-[1.2rem] lg:text-[3rem]">&#123</span>
+    <span class="text-white text-[3rem] px-[.5rem] font-raleway"> </span>
+    <span class="text-primary me-[1rem] text-[1.2rem] lg:text-[3rem]">&#x7D</span>
+    <hr class="w-[35rem] text-secondary">
   </div>
 
   <!------------- CURSO DE DESARROLLO FULLSTACK ------------->
-  <h3 class="text-[2rem] ms-[5rem] before:content-['#'] before:text-primary mb-[3rem] text-raleway"> Diplomatura de desarrollo Web Fullstack</h3>
+  <h3 class="text-[1.2rem] sm:text-[1.5rem] md:text-[2rem] lg:ms-[5rem] before:content-['#'] before:text-primary mb-[3rem] text-raleway"> Diplomatura de desarrollo Web Fullstack</h3>
 
-  <div class="flex items-center justify-around mb-[5rem]">
+  <div class="flex flex-col lg:flex-row items-center justify-around mb-[5rem]">
     <img 
       src="/about/code-1.png" 
       alt="code image"
-      class="rounded-full h-[30rem] border-[3px] border-secondary">
+      class="object-cover rounded-md lg:rounded-full h-[20rem] w-[50rem] lg:h-[30rem] border-[3px] border-secondary mb-[2rem] lg:mb-0">
 
-    <p class=" text-[1.3rem] pe-[8rem] ms-[5rem] text-roboto font-light">En Agosto 2022, me enrolé para la diplomatura de desarrollo Web de Academia By Numen, en la cual obtuve conocimientos
+    <p class="sm:text-[1.1rem] md:text-[1.3rem] lg:pe-[8rem] lg:ms-[5rem] text-roboto font-light">En Agosto 2022, me enrolé para la diplomatura de desarrollo Web de Academia By Numen, en la cual obtuve conocimientos
       en HTML, CSS, Javascript, React, Node.js y MongoDB. Junto con las horas de cursardo, pasé casi todo mi tiempo libre profundizando mis habilidades, efectuando una gran cantidad
       de proyectos, siendo retos de Frontend (de frontendmentor.io), ejercicios de algoritmos (hackerRank), o proyectos propios, los cuales están disponibles para ver en mi Github. 
       En Junio de 2023 finalmente obtuve mi diploma de desarrollador Fullstack.
     </p>
   </div>
+
+  <div class="flex justify-center items-center mt-[2rem] lg:mt-[8rem] w-[100%] mb-[5rem]">
+    <hr class="w-[35rem] text-secondary">
+    <span class="text-primary ms-[1rem] text-[1.2rem] lg:text-[3rem]">&#123</span>
+    <span class="text-white text-[3rem] px-[.5rem] font-raleway"> </span>
+    <span class="text-primary me-[1rem] text-[1.2rem] lg:text-[3rem]">&#x7D</span>
+    <hr class="w-[35rem] text-secondary">
+  </div>
   
     <!------------- PRESENTE ------------->
-    <h3 class="text-[2rem] ms-[5rem] before:content-['#'] before:text-primary animate-h1Slide mb-[3rem] text-raleway"> Presente</h3>
+    <h3 class="text-[1.2rem] sm:text-[1.5rem] md:text-[2rem] ms-[5rem] before:content-['#'] before:text-primary animate-h1Slide mb-[3rem] text-raleway"> Presente</h3>
 
-    <p class="text-[1.3rem] px-[8rem] mx-[5rem] text-roboto font-light text-center mb-[8rem]">En la actualidad me encuentro en proceso de constante aprendizaje, solidificando conocimientos ya obtenidos, ya sea con
+    <p class="sm:text-[1.1rem] md:text-[1.3rem] lg:px-[8rem] lg:mx-[5rem] text-roboto font-light text-center mb-[8rem]">En la actualidad me encuentro en proceso de constante aprendizaje, solidificando conocimientos ya obtenidos, ya sea con
       nuevos medios de aprendizaje o creando proyectos, y buscando nuevas tecnologías que podrían mejorar mis capacidades. También estoy en búsqueda activa de un rol laboral donde
-      pueda apliar lo aprendido y mejorar como desarrollador.
+      pueda aplicar lo aprendido y mejorar como desarrollador.
     </p>
 
 

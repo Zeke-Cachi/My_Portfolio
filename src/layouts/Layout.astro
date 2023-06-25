@@ -28,7 +28,7 @@ const { title } = Astro.props;
 			</a>
 
 			<nav class="md:me-[3rem] md:block transition-opacity opacity-0 md:opacity-100">
-				<ul class="flex flex-col md:flex-row justify-start md:justify-between absolute md:static w-screen h-[100%] md:w-auto md:h-auto bg-[rgba(0,0,0,.85)] md:bg-mainbg
+				<ul class="flex flex-col md:flex-row justify-start md:justify-between absolute md:static w-screen h-[100%] md:w-auto md:h-auto bg-[rgba(0,0,0,.90)] md:bg-mainbg
 				 top-0 left-0 md:top-auto md:left-auto z-30 pt-[8rem] md:pt-0 mt-[7.5rem] md:mt-[2.5rem]">
 					<li class="mx-[1rem] text-[2rem] md:text-[1.2rem] my-[2rem] md:my-0 text-center relative group font-raleway transition-all hover:font-bold hover:text-primary
 					md:hover:font-normal md:hover:text-white">
@@ -53,13 +53,13 @@ const { title } = Astro.props;
 			<button
 				class="h-[4rem] mx-[1rem] md:hidden">
 				<div 
-					class="w-[3rem] h-[.3rem] bg-white mb-[.4rem] rounded-xl transition-all"
+					class="w-[3rem] h-[.3rem] bg-white mb-[.4rem] rounded-xl transition-all duration-700"
 					id="long-line"></div>
 				<div 
-					class="w-[2.4rem] h-[.3rem] bg-white my-[.4rem] rounded-xl transition-all"
+					class="w-[2.4rem] h-[.3rem] bg-white my-[.4rem] rounded-xl transition-all duration-700"
 					id="middle-line"></div>
 				<div 
-					class="w-[1.9rem] h-[.3rem] bg-white mt-[.4rem] rounded-xl transition-all"
+					class="w-[1.9rem] h-[.3rem] bg-white mt-[.4rem] rounded-xl transition-all duration-700"
 					id="short-line"></div>
 			</button>
 
@@ -81,21 +81,21 @@ const { title } = Astro.props;
 					<img 
 					src="/socialMedia/linkedin.svg" 
 					alt="linkedin logo" 
-					class="h-[2rem] p-[0.3rem] sm:h-[3rem] my-[.1rem] sm:m-[.5rem] bg-primary transition-all hover:p-0 cursor-pointer">
+					class="h-[2rem] p-[0.3rem] sm:h-[3rem] my-[.1rem] sm:m-[.5rem] lg:mx-[1rem] bg-primary transition-all hover:p-0 cursor-pointer">
 				</a>
 				
 				<a href="https://github.com/Zeke-Cachi" target="_blank" rel="noopener noreferrer">
 					<img 
 					src="/socialMedia/github.svg" 
 					alt="github logo" 
-					class="h-[2rem] p-[0.3rem] sm:h-[3rem] my-[.1rem] sm:m-[.5rem] bg-primary transition-all hover:p-0 cursor-pointer">
+					class="h-[2rem] p-[0.3rem] sm:h-[3rem] my-[.1rem] sm:m-[.5rem] lg:mx-[1rem] bg-primary transition-all hover:p-0 cursor-pointer">
 				</a>
 
 				<a href="https://stackoverflow.com/users/21198309/zeke-cachi" target="_blank" rel="noopener noreferrer">
 					<img 
 					src="/socialMedia/stackoverflow.svg" 
 					alt="stack overflow logo" 
-					class="h-[2rem] p-[0.3rem] sm:h-[3rem] my-[.1rem] sm:m-[.5rem] bg-primary transition-all hover:p-0 cursor-pointer">
+					class="h-[2rem] p-[0.3rem] sm:h-[3rem] my-[.1rem] sm:m-[.5rem] lg:mx-[1rem] bg-primary transition-all hover:p-0 cursor-pointer">
 				</a>
 			</div>
 
@@ -116,9 +116,9 @@ const { title } = Astro.props;
 
 	button?.addEventListener('click', (e:any)=> {
 		middleLine?.classList.toggle('opacity-0');
-		longLine?.classList.toggle("rotate-[-45deg]");
+		longLine?.classList.toggle("rotate-[-405deg]");
 		longLine?.classList.toggle("translate-y-[.4rem]");
-		shortLine?.classList.toggle('rotate-[45deg]');
+		shortLine?.classList.toggle('rotate-[405deg]');
 		shortLine?.classList.toggle('translate-y-[-1rem]');
 		shortLine?.classList.toggle('w-[3rem]');
 
