@@ -10,7 +10,7 @@ const { title } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description">
+		<meta name="description" content="Porfolio de desarrollador web de Ezequiel Cachi">
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/black-logo.png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,7 @@ const { title } = Astro.props;
 				<img src="/logo.png" alt="" class="pt-[.7rem] w-[4rem] ms-[1rem]">
 			</a>
 
-			<nav class="md:me-[3rem] md:block transition-opacity opacity-0 md:opacity-100">
+			<nav class="md:me-[3rem] transition-all hidden md:block">
 				<ul class="flex flex-col md:flex-row justify-start items-center md:justify-between absolute md:static w-screen h-[100%] md:w-auto md:h-auto bg-[rgba(0,0,0,.90)] md:bg-mainbg
 				 top-0 left-0 md:top-auto md:left-auto z-30 pt-[8rem] md:pt-0 mt-[7.5rem] md:mt-0">
 					<li class="mx-[1rem] text-[2rem] md:text-[1.2rem] my-[2rem] md:my-0 text-center relative group font-raleway transition-all hover:font-bold hover:text-primary
@@ -122,12 +122,10 @@ const { title } = Astro.props;
 		shortLine?.classList.toggle('translate-y-[-1rem]');
 		shortLine?.classList.toggle('w-[3rem]');
 
-		if ( navbar?.classList.contains('opacity-0') ) {
-			navbar?.classList.remove('opacity-0');
-			navbar?.classList.add('opacity-100');
+		if ( navbar?.classList.contains('hidden') ) {
+			navbar?.classList.remove('hidden');
 		} else {
-			navbar?.classList.remove('opacity-100');
-			navbar?.classList.add('opacity-0');
+			navbar?.classList.add('hidden');
 		}
 	})
 </script>

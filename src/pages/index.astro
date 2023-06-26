@@ -26,12 +26,12 @@ import Projects from '../components/Projects.astro'
     </p>
     <div class="mt-[5rem] flex w-[100%] animate-button">
       <button class="w-[7rem] md:min-w-[10rem] lg:min-w-[12rem] h-[2.5rem] lg:h-[3rem] bg-primary text-black font-bold md:text-[1.1rem] lg:text-[1.2rem] 
-      rounded-lg hover:bg-white hover:text-primary shadow-inner shadow-solidOrange transition-all
+      rounded-lg hover:bg-white hover:text-primary  shadow-solidOrange transition-all
       active:bg-primary me-[1rem] md:me-[3rem]"
       id="downloadButton">Descargar CV</button>
       
       <button class="w-[7rem] md:min-w-[10rem] lg:min-w-[12rem] h-[2.5rem] lg:h-[3rem] bg-white text-black font-bold md:text-[1.1rem] lg:text-[1.2rem] 
-      rounded-lg me-[2rem] hover:bg-primary hover:text-white shadow-inner shadow-solidWhite transition-all
+      rounded-lg me-[2rem] hover:bg-primary hover:text-white  shadow-solidWhite transition-all
       active:bg-secondary">
         <a href="/contact"> Contactame</a>
       </button>
@@ -50,16 +50,6 @@ import Projects from '../components/Projects.astro'
   const downloadButton = document.getElementById('downloadButton');
 
   downloadButton.addEventListener('click', () => {
-    const fileUrl = '/Resume.pdf';
-    const fileName = 'Resume.pdf';
-
-    const link = document.createElement('a');
-    link.href = fileUrl;
-    link.download = fileName;
-    link.click();
-  })
-
-  downloadButton.addEventListener('touchstart', () => {
     const fileUrl = '/Resume.pdf';
     const fileName = 'Resume.pdf';
 
