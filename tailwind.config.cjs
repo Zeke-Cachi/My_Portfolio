@@ -66,6 +66,10 @@ module.exports = {
 					'0%': {transform: 'scale(1)'},
 					'50%': {transform: 'scale(1.2)'},
 					'100%': {transform: 'scale(1)'}
+				},
+				click: {
+					'0%': {color:'mainbg'},
+					'100%': {color: 'secondary'}
 				}
       },
 			animation: {
@@ -85,7 +89,8 @@ module.exports = {
 				'formButton': 'buttonShow 2s ease-in',
 				'button': 'buttonShow 1.5s ease-in',
 				'stack': 'stackSlide 30s infinite linear',
-				'pulsing': 'pulse 2s infinite'
+				'pulsing': 'pulse 2s infinite',
+				'clickHere': 'click 5s ease-in'
       },
 			boxShadow: {
 				'solidOrange': '0 0 0 2px #fa8500',

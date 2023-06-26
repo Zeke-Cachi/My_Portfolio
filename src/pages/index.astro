@@ -6,35 +6,40 @@ import Projects from '../components/Projects.astro'
 
 <MainLayout title="Ezequiel Cachi - Home">
 
-<section class="flex justify-between items-center p-[1rem]">
-  <div class="basis-[60%] p-[3rem]">
-    <h1 class="mb-[2rem] text-[4rem] text-white font-raleway animate-h1Slide font-bold">Hola! soy <span class="text-primary">Ezequiel Cachi</span>, desarrollador web Fullstack
-    </h1>
+<section class="grid md:grid-rows-2 md:grid-cols-2 px-[2rem] my-[5rem]">
 
-    <p class="font-roboto animate-pSlide text-[1.2rem] leading-[1.8rem] pe-[4rem] font-light">Soy un desarrollador web apasionado por la confección de contenido de calidad, con interfaces intuitivas y código limpio y legible. Cuento con conocimientos
-    tanto del frontend como del backend, pudiendo crear páginas y aplicaciones web desde cero. Actualmente estoy buscando un rol en el cual pueda demostrar mis conocimientos, al mismo tiempo
-    de desarrollar cada vez más mi gama de herramientas y maximizar mi aprendizaje
-    </p>
-  </div>
+  <h1 class="mb-[2rem] text-[1.8rem] sm:text-[2.8rem] lg:text-[3rem] xl:text-[3.8rem] 2xl:text-[4rem] text-white font-raleway animate-h1Slide font-bold">Hola! soy 
+    <span class="text-primary">Ezequiel Cachi</span>, desarrollador web Fullstack
+  </h1>
 
   <img 
     src="./mainImg.jpeg" 
     alt="profile picture"
-    class="w-[30rem] h-[30rem] rounded-full border-secondary border-[5px] mx-auto animate-slideFromRight">
+    class="w-[15rem] h-[15rem] sm:w-[15rem] sm:h-[15rem] lg:w-[25rem] lg:h-[25rem] 2xl:w-[30rem] 2xl:h-[30rem] rounded-full border-secondary border-[5px] mx-auto 
+    md:col-span-1 md:row-span-1 lg:row-span-2 animate-slideFromRight md:mb-[1.5rem] lg:mb-0">
+
+  <div class="md:col-span-2 lg:col-span-1 mt-[1rem] md:mt-0">
+    <p class="lg:mt-[-3rem] xl:mt-0 font-roboto animate-pSlide sm:text-[1.2rem] leading-[1.8rem] md:pe-[4rem] font-light">Soy un desarrollador 
+      web apasionado por la confección de contenido de calidad, con interfaces intuitivas y código limpio y legible. Cuento con conocimientos
+      tanto del frontend como del backend, pudiendo crear páginas y aplicaciones web desde cero. Actualmente estoy buscando un rol en el cual 
+      pueda demostrar mis conocimientos, al mismo tiempo de desarrollar cada vez más mi gama de herramientas y maximizar mi aprendizaje
+    </p>
+    <div class="mt-[5rem] flex w-[100%] animate-button">
+      <button class="w-[7rem] md:min-w-[10rem] lg:min-w-[12rem] h-[2.5rem] lg:h-[3rem] bg-primary text-black font-bold md:text-[1.1rem] lg:text-[1.2rem] 
+      rounded-lg hover:bg-white hover:text-primary shadow-inner shadow-solidOrange transition-all
+      active:bg-primary me-[1rem] md:me-[3rem]"
+      id="downloadButton">Descargar CV</button>
+      
+      <button class="w-[7rem] md:min-w-[10rem] lg:min-w-[12rem] h-[2.5rem] lg:h-[3rem] bg-white text-black font-bold md:text-[1.1rem] lg:text-[1.2rem] 
+      rounded-lg me-[2rem] hover:bg-primary hover:text-white shadow-inner shadow-solidWhite transition-all
+      active:bg-secondary">
+        <a href="/contact"> Contactame</a>
+      </button>
+    </div>
+  </div>
+  
 </section>
 
-<div class="ms-[8rem] flex justify-center w-[30%] animate-button">
-  <button class="w-[12rem] h-[3rem] bg-primary text-black font-bold text-[1.2rem] 
-  rounded-lg me-[4rem] hover:bg-white hover:text-primary shadow-inner shadow-solidOrange transition-all
-  active:bg-primary"
-  id="downloadButton">Descargar CV</button>
-  
-  <button class="w-[12rem] h-[3rem] bg-white text-black font-bold text-[1.2rem] 
-  rounded-lg me-[2rem] hover:bg-primary hover:text-white shadow-inner shadow-solidWhite transition-all
-  active:bg-secondary">
-    <a href="/contact"> Contactame</a>
-  </button>
-</div>
 
 <Stack />
 
