@@ -59,5 +59,15 @@ import Projects from '../components/Projects.astro'
     link.click();
   })
 
+  downloadButton.addEventListener('touchstart', () => {
+    const fileUrl = '/Resume.pdf';
+    const fileName = 'Resume.pdf';
+
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.download = fileName;
+    link.click();
+  })
+
 
 </script>
