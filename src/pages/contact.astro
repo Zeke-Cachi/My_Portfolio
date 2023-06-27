@@ -83,8 +83,8 @@ import MainLayout from '../layouts/Layout.astro';
           required
           id="commentary"
           name="commentary"
-          class=" md:mb-[1rem] xl:mb-[0] w-[15rem] sm:w-[20rem] md:w-[30rem] md:h-[10rem] xl:w-[25rem] xl:h-[10rem] rounded-md bg-secondary border-[1px] border-primary text-white pb-[8rem] 
-          px-[.5rem] hover:border-white active:border-white outline-none custom-autofill active:bg-secondary animate-formCommentary">
+          class=" md:mb-[1rem] xl:mb-[0] w-[15rem] sm:w-[20rem] md:w-[30rem] md:h-[10rem] xl:w-[25rem] xl:h-[10rem] rounded-md bg-secondary border-[1px] 
+          border-primary text-white pb-[8rem] pt-[.5rem] hover:border-white active:border-white outline-none custom-autofill active:bg-secondary animate-formCommentary">
         </textarea>
       </div>
 
@@ -130,17 +130,23 @@ import MainLayout from '../layouts/Layout.astro';
 </section>
 
 <script>
-  window.onload = () => {
-    document.forms.reset();
-  };
+window.onload = function() {
+  const contactForm = document.getElementById("contact-form");
+  if (contactForm) {
+    contactForm.reset();
+  }
+};
 </script>
 
 
-<!-- THIS OVERRIDES THE DEFAULT CHROME AUTOFILL STYLE -->
+
 <style>
 .custom-autofill {
   -webkit-box-shadow: 0 0 0px 1000px #545454 inset;
   -webkit-text-fill-color: #ffff;
 }
 
+* {
+    -webkit-tap-highlight-color: transparent;
+}
 </style>
