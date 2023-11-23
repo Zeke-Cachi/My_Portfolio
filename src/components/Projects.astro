@@ -1,196 +1,365 @@
-
-
-<div class="flex justify-center items-center mt-[5rem] lg:mt-[8rem] xl:mt-[13rem] w-[100%] mb-[5rem]">
-  <hr class="w-[15%] md:w-[30%] text-secondary">
-  <span class="text-primary ms-[1rem] text-[1.5rem] md:text-[2rem] xl:text-[3rem]">&#123</span>
-  <span class="text-white text-[1.5rem] md:text-[2rem] xl:text-[3rem] px-[.5rem] font-raleway">Mis Proyectos</span>
-  <span class="text-primary me-[1rem] text-[1.5rem] md:text-[2rem] xl:text-[3rem]">&#x7D</span>
-  <hr class="w-[15%] md:w-[30%] text-secondary">
+<div
+  class="flex justify-center items-center mt-[5rem] lg:mt-[8rem] xl:mt-[13rem] w-[100%] mb-[5rem]"
+>
+  <hr class="w-[15%] md:w-[30%] text-secondary" />
+  <span
+    class="text-primary ms-[1rem] text-[1.5rem] md:text-[2rem] xl:text-[3rem]"
+    >&#123</span
+  >
+  <span
+    class="text-white text-[1.5rem] md:text-[2rem] xl:text-[3rem] px-[.5rem] font-raleway"
+    >Mis Proyectos</span
+  >
+  <span
+    class="text-primary me-[1rem] text-[1.5rem] md:text-[2rem] xl:text-[3rem]"
+    >&#x7D</span
+  >
+  <hr class="w-[15%] md:w-[30%] text-secondary" />
 </div>
 
 <section>
+  <!---------------- WEATHER APP ---------------->
+  <div
+    class="grid md:grid-cols-2 px-[2rem] place-items-center custom-perspective cursor-pointer"
+  >
+    <div
+      class="md:col-span-2 w-[18rem] h-[28rem] md:w-[80%] xl:w-[70rem] md:h-[30rem] 2xl:w-[90rem] 2xl:h-[30rem] border-[2px] border-white rounded-lg mb-[2rem] md:mb-[5rem] grid place-items-center relative transition-all duration-500 card hover:shadow-solidOrange"
+      id="weather"
+    >
+      <div
+        class="absolute top-0 left-0 w-[100%] h-[100%] bg-mainbg grid place-items-center border-white rounded-lg px-[.5rem] md:px-[1rem]"
+      >
+        <h2
+          class="text-center text-[2rem] md:text-[3rem] lg:text-[5rem] text-primary font-bold"
+        >
+          Generic E-Commerce
+        </h2>
+      </div>
+
+      <div
+        class="flex flex-col md:grid md:grid-cols-10 absolute place-items-center top-0 left-0 w-[100%] h-[100%] bg-mainbg border-white rounded-lg custom-rotate overflow-hidden"
+      >
+        <div
+          class="bg-generic_ecommerce w-[100%] h-[100%] md:col-span-4 bg-center bg-cover bg-no-repeat border-b-[2px] border-b-white md:border-e-[2px] md:border-e-white md:border-b-[0px]"
+        >
+        </div>
+        <div
+          class="w-[100%] h-[100%] md:col-span-6 flex flex-col justify-center py-[.3rem] px-[1rem] md:px-[3rem] bg-secondary"
+        >
+          <h3
+            class="font-raleway md:text-[1.8rem] lg:text-[2.5rem] text-primary font-bold md:font-normal"
+          >
+            Generic E-Commerce
+          </h3>
+          <p
+            class="mt-[.5rem] md:mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto"
+          >
+            ECommerce al estilo compra-venta, donde podrás efectuar compras de
+            productos, así como publicar tus propios productos a la venta. La
+            autenticación y storage están a cargo de Firebase, el frontend fue
+            hecho con Next.js (Tailwind para el CSS), y Node.js/MongoDB para el
+            backend.
+          </p>
+          <p
+            class="mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto italic"
+          >
+            Podes ver el código frontend
+            <a
+              href="https://github.com/Zeke-Cachi/Generic_Ecommerce_-frontend-"
+              class="font-bold text-primary hover:text-white"
+              target="_blank"
+              rel="noopener noreferrer">acá</a
+            >
+          </p>
+          <p
+            class="mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto italic"
+          >
+            El backend
+            <a
+              href="https://github.com/Zeke-Cachi/Generic_Ecommerce_-backend-"
+              class="font-bold text-primary hover:text-white"
+              target="_blank"
+              rel="noopener noreferrer">acá</a
+            >
+          </p>
+          <p
+            class="mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto italic"
+          >
+            Podes ver el deploy
+            <a
+              href="https://generic-ecommerce-five.vercel.app"
+              class="font-bold text-primary hover:text-white"
+              target="_blank"
+              rel="noopener noreferrer">acá</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!---------------- GROUP CALCULATOR CARD ---------------->
-  <div class="grid md:grid-cols-2 px-[2rem] place-items-center custom-perspective cursor-pointer">
-
-    <div 
-      class="md:col-span-2 w-[18rem] h-[28rem] md:w-[80%] xl:w-[70rem] md:h-[30rem] 2xl:w-[90rem] 2xl:h-[30rem] border-[2px] border-white rounded-lg 
-      mb-[2rem] md:mb-[5rem] grid place-items-center relative transition-all duration-500 card hover:shadow-solidOrange" 
-      id="calculatorCard">
-
-      <div class="absolute top-0 left-0 w-[100%] h-[100%] bg-mainbg grid place-items-center border-white rounded-lg px-[.5rem] md:px-[1rem]">
-        <h2 class="text-center text-[2rem] md:text-[3rem] lg:text-[5rem] text-primary font-bold">Calculadora de costos grupales</h2>
+  <div
+    class="grid md:grid-cols-2 px-[2rem] place-items-center custom-perspective cursor-pointer"
+  >
+    <div
+      class="md:col-span-2 w-[18rem] h-[28rem] md:w-[80%] xl:w-[70rem] md:h-[30rem] 2xl:w-[90rem] 2xl:h-[30rem] border-[2px] border-white rounded-lg mb-[2rem] md:mb-[5rem] grid place-items-center relative transition-all duration-500 card hover:shadow-solidOrange"
+      id="calculatorCard"
+    >
+      <div
+        class="absolute top-0 left-0 w-[100%] h-[100%] bg-mainbg grid place-items-center border-white rounded-lg px-[.5rem] md:px-[1rem]"
+      >
+        <h2
+          class="text-center text-[2rem] md:text-[3rem] lg:text-[5rem] text-primary font-bold"
+        >
+          Calculadora de costos grupales
+        </h2>
       </div>
 
-      <div class="flex flex-col md:grid md:grid-cols-10 absolute place-items-center top-0 left-0 w-[100%] h-[100%] bg-mainbg border-white rounded-lg custom-rotate overflow-hidden">
-        <div class="bg-calculator w-[100%] h-[100%] md:col-span-4 bg-center bg-cover bg-no-repeat border-b-[2px] border-b-white md:border-e-[2px] md:border-e-white md:border-b-[0px]"></div>
-        <div class="w-[100%] h-[100%] md:col-span-6 flex flex-col justify-center py-[.3rem] px-[1rem] md:px-[3rem] bg-secondary">
-          <h3 class="font-raleway md:text-[1.8rem] lg:text-[2.5rem] text-primary font-bold md:font-normal">Calculadora de costos grupales</h3>
-          <p class="mt-[.5rem] md:mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto">WebApp para dividir de modo equitativo los costos entre un grupo de personas. 
-            Hecha con Next.js y Tailwind, manejada solamente con useState y useEffect, sin nada de backend.
+      <div
+        class="flex flex-col md:grid md:grid-cols-10 absolute place-items-center top-0 left-0 w-[100%] h-[100%] bg-mainbg border-white rounded-lg custom-rotate overflow-hidden"
+      >
+        <div
+          class="bg-calculator w-[100%] h-[100%] md:col-span-4 bg-center bg-cover bg-no-repeat border-b-[2px] border-b-white md:border-e-[2px] md:border-e-white md:border-b-[0px]"
+        >
+        </div>
+        <div
+          class="w-[100%] h-[100%] md:col-span-6 flex flex-col justify-center py-[.3rem] px-[1rem] md:px-[3rem] bg-secondary"
+        >
+          <h3
+            class="font-raleway md:text-[1.8rem] lg:text-[2.5rem] text-primary font-bold md:font-normal"
+          >
+            Calculadora de costos grupales
+          </h3>
+          <p
+            class="mt-[.5rem] md:mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto"
+          >
+            WebApp para dividir de modo equitativo los costos entre un grupo de
+            personas. Hecha con Next.js y Tailwind, manejada solamente con
+            useState y useEffect, sin nada de backend.
           </p>
-          <p class="mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto italic">Podes ver el código 
-            <a 
-              href="https://github.com/Zeke-Cachi/Check_Splitter_webapp" 
+          <p
+            class="mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto italic"
+          >
+            Podes ver el código
+            <a
+              href="https://github.com/Zeke-Cachi/Check_Splitter_webapp"
               class="font-bold text-primary hover:text-white"
-              target="_blank" rel="noopener noreferrer">acá</a></p>
-          <p class="mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto italic">Podes ver el deploy 
-            <a 
-              href="https://aesthetic-swan-27ee55.netlify.app" 
+              target="_blank"
+              rel="noopener noreferrer">acá</a
+            >
+          </p>
+          <p
+            class="mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto italic"
+          >
+            Podes ver el deploy
+            <a
+              href="https://aesthetic-swan-27ee55.netlify.app"
               class="font-bold text-primary hover:text-white"
-              target="_blank" rel="noopener noreferrer">acá</a></p>
+              target="_blank"
+              rel="noopener noreferrer">acá</a
+            >
+          </p>
         </div>
       </div>
     </div>
   </div>
 
-    <!---------------- MOVIE DATABASE ---------------->
-    <div class="grid md:grid-cols-2 px-[2rem] place-items-center custom-perspective cursor-pointer">
-
-      <div 
-        class="md:col-span-2 w-[18rem] h-[28rem] md:w-[80%] xl:w-[70rem] md:h-[30rem] 2xl:w-[90rem] 2xl:h-[30rem] border-[2px] border-white rounded-lg 
-        mb-[2rem] md:mb-[5rem] grid place-items-center relative transition-all duration-500 card hover:shadow-solidOrange" 
-        id="movieCard">
-  
-        <div class="absolute top-0 left-0 w-[100%] h-[100%] bg-mainbg grid place-items-center border-white rounded-lg px-[.5rem] md:px-[1rem]">
-          <h2 class="text-center text-[2rem] md:text-[3rem] lg:text-[5rem] text-primary font-bold">Movie Database</h2>
-        </div>
-  
-        <div class="flex flex-col md:grid md:grid-cols-10 absolute place-items-center top-0 left-0 w-[100%] h-[100%] bg-mainbg border-white rounded-lg custom-rotate overflow-hidden">
-          <div class="bg-database w-[100%] h-[100%] md:col-span-4 bg-center bg-cover bg-no-repeat border-b-[2px] border-b-white md:border-e-[2px] md:border-e-white md:border-b-[0px]"></div>
-          <div class="w-[100%] h-[100%] md:col-span-6 flex flex-col justify-center py-[.3rem] px-[1rem] md:px-[3rem] bg-secondary">
-            <h3 class="font-raleway md:text-[1.8rem] lg:text-[2.5rem] text-primary font-bold md:font-normal">Movie Database</h3>
-            <p class="mt-[.5rem] md:mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto">Base de datos de películas. Se usó la API de The Movie Database, hecha con React (create-react-app, previo a su deprecación) y Tailwind,
-              tiene la opción de buscar por nombre, otorga datos de nombre, rating, y un modal con más detalles de la película buscada. 
-
-            </p>
-            <p class="mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto italic">Podes ver el código 
-              <a 
-                href="https://github.com/Zeke-Cachi/Movie_Database" 
-                class="font-bold text-primary hover:text-white"
-                target="_blank" rel="noopener noreferrer">acá</a></p>
-            <p class="mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto italic">Podes ver el deploy 
-              <a 
-                href="https://stirring-treacle-233dbd.netlify.app/" 
-                class="font-bold text-primary hover:text-white"
-                target="_blank" rel="noopener noreferrer">acá</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-      <!---------------- MUSIC STORE STOCK EDITOR ---------------->
-  <div class="grid md:grid-cols-2 px-[2rem] place-items-center custom-perspective cursor-pointer">
-
-    <div 
-      class="md:col-span-2 w-[18rem] h-[28rem] md:w-[80%] xl:w-[70rem] md:h-[30rem] 2xl:w-[90rem] 2xl:h-[30rem] border-[2px] border-white rounded-lg 
-      mb-[2rem] md:mb-[5rem] grid place-items-center relative transition-all duration-500 card hover:shadow-solidOrange" 
-      id="musicStore">
-
-      <div class="absolute top-0 left-0 w-[100%] h-[100%] bg-mainbg grid place-items-center border-white rounded-lg px-[.5rem] md:px-[1rem]">
-        <h2 class="text-center text-[2rem] md:text-[3rem] lg:text-[5rem] text-primary font-bold">Editor de stock (servidor CRUD)</h2>
+  <!---------------- MOVIE DATABASE ---------------->
+  <div
+    class="grid md:grid-cols-2 px-[2rem] place-items-center custom-perspective cursor-pointer"
+  >
+    <div
+      class="md:col-span-2 w-[18rem] h-[28rem] md:w-[80%] xl:w-[70rem] md:h-[30rem] 2xl:w-[90rem] 2xl:h-[30rem] border-[2px] border-white rounded-lg mb-[2rem] md:mb-[5rem] grid place-items-center relative transition-all duration-500 card hover:shadow-solidOrange"
+      id="movieCard"
+    >
+      <div
+        class="absolute top-0 left-0 w-[100%] h-[100%] bg-mainbg grid place-items-center border-white rounded-lg px-[.5rem] md:px-[1rem]"
+      >
+        <h2
+          class="text-center text-[2rem] md:text-[3rem] lg:text-[5rem] text-primary font-bold"
+        >
+          Movie Database
+        </h2>
       </div>
 
-      <div class="flex flex-col md:grid md:grid-cols-10 absolute place-items-center top-0 left-0 w-[100%] h-[100%] bg-mainbg border-white rounded-lg custom-rotate overflow-hidden">
-        <div class="bg-musicStore w-[100%] h-[100%] md:col-span-4 bg-center bg-cover bg-no-repeat border-b-[2px] border-b-white md:border-e-[2px] md:border-e-white md:border-b-[0px]"></div>
-        <div class="w-[100%] h-[100%] md:col-span-6 flex flex-col justify-center py-[.3rem] px-[1rem] md:px-[3rem] bg-secondary">
-          <h3 class="font-raleway md:text-[1.8rem] lg:text-[2.5rem] text-primary font-bold md:font-normal">Editor de stock (servidor CRUD)</h3>
-          <p class="mt-[.5rem] md:mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto">Una aplicación para ver y editar el stock de una tienda musical ficticia. Es un front que le efectué a un servidor CRUD que 
-            había creado previamente con Node.js. El front está hecho con Next.js (con Typescript) y Tailwind, usando componentes de DaisyUI.
-
+      <div
+        class="flex flex-col md:grid md:grid-cols-10 absolute place-items-center top-0 left-0 w-[100%] h-[100%] bg-mainbg border-white rounded-lg custom-rotate overflow-hidden"
+      >
+        <div
+          class="bg-database w-[100%] h-[100%] md:col-span-4 bg-center bg-cover bg-no-repeat border-b-[2px] border-b-white md:border-e-[2px] md:border-e-white md:border-b-[0px]"
+        >
+        </div>
+        <div
+          class="w-[100%] h-[100%] md:col-span-6 flex flex-col justify-center py-[.3rem] px-[1rem] md:px-[3rem] bg-secondary"
+        >
+          <h3
+            class="font-raleway md:text-[1.8rem] lg:text-[2.5rem] text-primary font-bold md:font-normal"
+          >
+            Movie Database
+          </h3>
+          <p
+            class="mt-[.5rem] md:mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto"
+          >
+            Base de datos de películas. Se usó la API de The Movie Database,
+            hecha con React (create-react-app, previo a su deprecación) y
+            Tailwind, tiene la opción de buscar por nombre, otorga datos de
+            nombre, rating, y un modal con más detalles de la película buscada.
           </p>
-          <p class="mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto italic">Podes ver el código 
-            <a 
-              href="https://github.com/Zeke-Cachi/Music_Store_Stock_Editor" 
+          <p
+            class="mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto italic"
+          >
+            Podes ver el código
+            <a
+              href="https://github.com/Zeke-Cachi/Movie_Database"
               class="font-bold text-primary hover:text-white"
-              target="_blank" rel="noopener noreferrer">acá</a></p>
-          <p class="mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto italic">Podes ver el deploy 
-            <a 
-              href="https://music-store-stock-editor.vercel.app/" 
+              target="_blank"
+              rel="noopener noreferrer">acá</a
+            >
+          </p>
+          <p
+            class="mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto italic"
+          >
+            Podes ver el deploy
+            <a
+              href="https://stirring-treacle-233dbd.netlify.app/"
               class="font-bold text-primary hover:text-white"
-              target="_blank" rel="noopener noreferrer">acá</a></p>
+              target="_blank"
+              rel="noopener noreferrer">acá</a
+            >
+          </p>
         </div>
       </div>
     </div>
   </div>
 
-    <!---------------- MY PORTFOLIO ---------------->
-    <div class="grid md:grid-cols-2 px-[2rem] place-items-center custom-perspective outline-none cursor-pointer">
-
-      <div 
-        class="md:col-span-2 w-[18rem] h-[28rem] md:w-[80%] xl:w-[70rem] md:h-[30rem] 2xl:w-[90rem] 2xl:h-[30rem] border-[2px] border-white rounded-lg 
-        mb-[2rem] md:mb-[5rem] grid place-items-center relative transition-all duration-500 card hover:shadow-solidOrange" 
-        id="portfolio">
-  
-        <div class="absolute top-0 left-0 w-[100%] h-[100%] bg-mainbg grid place-items-center border-white rounded-lg px-[.5rem] md:px-[1rem]">
-          <h2 class="text-center text-[2rem] md:text-[3rem] lg:text-[5rem] text-primary font-bold">Mi Portfolio</h2>
-        </div>
-  
-        <div class="flex flex-col md:grid md:grid-cols-10 absolute place-items-center top-0 left-0 w-[100%] h-[100%] bg-mainbg border-white rounded-lg custom-rotate overflow-hidden">
-          <div class="bg-portfolio w-[100%] h-[100%] md:col-span-4 bg-center md:bg-right bg-cover bg-no-repeat border-b-[2px]
-        border-b-white md:border-e-[2px] md:border-e-white md:border-b-[0px]"></div>
-          <div class="w-[100%] h-[100%] md:col-span-6 flex flex-col justify-center py-[.3rem] px-[1rem] md:px-[3rem] bg-secondary">
-            <h3 class="font-raleway md:text-[1.8rem] lg:text-[2.5rem] text-primary font-bold md:font-normal">Mi portfolio</h3>
-            <p class="mt-[.5rem] md:mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto">Esta misma página! Hecha con Astro, ya que este framework se da muy bien para sitios estáticos. Se le dió el estilo con
-              Tailwind, y algunas clases a medida con CSS puro (ya que hay algunas propiedades poco usadas de CSS no están aún en las utilidades de Tailwind). La funcionalidad necesaria
-              fue hecha con Typescript.
-
-            </p>
-            <p class="mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto italic">Podes ver el código 
-              <a 
-                href="https://github.com/Zeke-Cachi/My_Portfolio" 
-                class="font-bold text-primary hover:text-white"
-                target="_blank" rel="noopener noreferrer">acá
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-      <!---------------- WEATHER APP ---------------->
-  <div class="grid md:grid-cols-2 px-[2rem] place-items-center custom-perspective cursor-pointer">
-
-    <div 
-      class="md:col-span-2 w-[18rem] h-[28rem] md:w-[80%] xl:w-[70rem] md:h-[30rem] 2xl:w-[90rem] 2xl:h-[30rem] border-[2px] border-white rounded-lg 
-      mb-[2rem] md:mb-[5rem] grid place-items-center relative transition-all duration-500 card hover:shadow-solidOrange" 
-      id="weather">
-
-      <div class="absolute top-0 left-0 w-[100%] h-[100%] bg-mainbg grid place-items-center border-white rounded-lg px-[.5rem] md:px-[1rem]">
-        <h2 class="text-center text-[2rem] md:text-[3rem] lg:text-[5rem] text-primary font-bold">Aplicación de clima</h2>
+  <!---------------- MUSIC STORE STOCK EDITOR ---------------->
+  <div
+    class="grid md:grid-cols-2 px-[2rem] place-items-center custom-perspective cursor-pointer"
+  >
+    <div
+      class="md:col-span-2 w-[18rem] h-[28rem] md:w-[80%] xl:w-[70rem] md:h-[30rem] 2xl:w-[90rem] 2xl:h-[30rem] border-[2px] border-white rounded-lg mb-[2rem] md:mb-[5rem] grid place-items-center relative transition-all duration-500 card hover:shadow-solidOrange"
+      id="musicStore"
+    >
+      <div
+        class="absolute top-0 left-0 w-[100%] h-[100%] bg-mainbg grid place-items-center border-white rounded-lg px-[.5rem] md:px-[1rem]"
+      >
+        <h2
+          class="text-center text-[2rem] md:text-[3rem] lg:text-[5rem] text-primary font-bold"
+        >
+          Editor de stock (servidor CRUD)
+        </h2>
       </div>
 
-      <div class="flex flex-col md:grid md:grid-cols-10 absolute place-items-center top-0 left-0 w-[100%] h-[100%] bg-mainbg border-white rounded-lg custom-rotate overflow-hidden">
-        <div class="bg-weather w-[100%] h-[100%] md:col-span-4 bg-center bg-cover bg-no-repeat border-b-[2px] border-b-white md:border-e-[2px] md:border-e-white md:border-b-[0px]"></div>
-        <div class="w-[100%] h-[100%] md:col-span-6 flex flex-col justify-center py-[.3rem] px-[1rem] md:px-[3rem] bg-secondary">
-          <h3 class="font-raleway md:text-[1.8rem] lg:text-[2.5rem] text-primary font-bold md:font-normal">Weather App</h3>
-          <p class="mt-[.5rem] md:mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto">Uno de mis primeros proyectos en Javascript, una aplicación para buscar el clima de cualquier ciudad, usando la API de 
-            OpenWeather, junto con JS puro y CSS.
+      <div
+        class="flex flex-col md:grid md:grid-cols-10 absolute place-items-center top-0 left-0 w-[100%] h-[100%] bg-mainbg border-white rounded-lg custom-rotate overflow-hidden"
+      >
+        <div
+          class="bg-musicStore w-[100%] h-[100%] md:col-span-4 bg-center bg-cover bg-no-repeat border-b-[2px] border-b-white md:border-e-[2px] md:border-e-white md:border-b-[0px]"
+        >
+        </div>
+        <div
+          class="w-[100%] h-[100%] md:col-span-6 flex flex-col justify-center py-[.3rem] px-[1rem] md:px-[3rem] bg-secondary"
+        >
+          <h3
+            class="font-raleway md:text-[1.8rem] lg:text-[2.5rem] text-primary font-bold md:font-normal"
+          >
+            Editor de stock (servidor CRUD)
+          </h3>
+          <p
+            class="mt-[.5rem] md:mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto"
+          >
+            Una aplicación para ver y editar el stock de una tienda musical
+            ficticia. Es un front que le efectué a un servidor CRUD que había
+            creado previamente con Node.js. El front está hecho con Next.js (con
+            Typescript) y Tailwind, usando componentes de DaisyUI.
           </p>
-          <p class="mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto italic">Podes ver el código 
-            <a 
-              href="https://github.com/Zeke-Cachi/JS_Weather_App" 
+          <p
+            class="mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto italic"
+          >
+            Podes ver el código
+            <a
+              href="https://github.com/Zeke-Cachi/Music_Store_Stock_Editor"
               class="font-bold text-primary hover:text-white"
-              target="_blank" rel="noopener noreferrer">acá</a></p>
-          <p class="mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto italic">Podes ver el deploy 
-            <a 
-              href="https://zeke-cachi.github.io/JS_Weather_App/" 
+              target="_blank"
+              rel="noopener noreferrer">acá</a
+            >
+          </p>
+          <p
+            class="mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto italic"
+          >
+            Podes ver el deploy
+            <a
+              href="https://music-store-stock-editor.vercel.app/"
               class="font-bold text-primary hover:text-white"
-              target="_blank" rel="noopener noreferrer">acá</a></p>
+              target="_blank"
+              rel="noopener noreferrer">acá</a
+            >
+          </p>
         </div>
       </div>
     </div>
   </div>
 
-  
+  <!---------------- MY PORTFOLIO ---------------->
+  <div
+    class="grid md:grid-cols-2 px-[2rem] place-items-center custom-perspective outline-none cursor-pointer"
+  >
+    <div
+      class="md:col-span-2 w-[18rem] h-[28rem] md:w-[80%] xl:w-[70rem] md:h-[30rem] 2xl:w-[90rem] 2xl:h-[30rem] border-[2px] border-white rounded-lg mb-[2rem] md:mb-[5rem] grid place-items-center relative transition-all duration-500 card hover:shadow-solidOrange"
+      id="portfolio"
+    >
+      <div
+        class="absolute top-0 left-0 w-[100%] h-[100%] bg-mainbg grid place-items-center border-white rounded-lg px-[.5rem] md:px-[1rem]"
+      >
+        <h2
+          class="text-center text-[2rem] md:text-[3rem] lg:text-[5rem] text-primary font-bold"
+        >
+          Mi Portfolio
+        </h2>
+      </div>
 
-
+      <div
+        class="flex flex-col md:grid md:grid-cols-10 absolute place-items-center top-0 left-0 w-[100%] h-[100%] bg-mainbg border-white rounded-lg custom-rotate overflow-hidden"
+      >
+        <div
+          class="bg-portfolio w-[100%] h-[100%] md:col-span-4 bg-center md:bg-right bg-cover bg-no-repeat border-b-[2px] border-b-white md:border-e-[2px] md:border-e-white md:border-b-[0px]"
+        >
+        </div>
+        <div
+          class="w-[100%] h-[100%] md:col-span-6 flex flex-col justify-center py-[.3rem] px-[1rem] md:px-[3rem] bg-secondary"
+        >
+          <h3
+            class="font-raleway md:text-[1.8rem] lg:text-[2.5rem] text-primary font-bold md:font-normal"
+          >
+            Mi portfolio
+          </h3>
+          <p
+            class="mt-[.5rem] md:mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto"
+          >
+            Esta misma página! Hecha con Astro, ya que este framework se da muy
+            bien para sitios estáticos. Se le dió el estilo con Tailwind, y
+            algunas clases a medida con CSS puro (ya que hay algunas propiedades
+            poco usadas de CSS no están aún en las utilidades de Tailwind). La
+            funcionalidad necesaria fue hecha con Typescript.
+          </p>
+          <p
+            class="mt-[1rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem] font-Roboto italic"
+          >
+            Podes ver el código
+            <a
+              href="https://github.com/Zeke-Cachi/My_Portfolio"
+              class="font-bold text-primary hover:text-white"
+              target="_blank"
+              rel="noopener noreferrer"
+              >acá
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-
-
-
-
-
 
 <!---------------- CUSTOM CSS ----------------->
 <style>
@@ -213,35 +382,36 @@
 
   * {
     -webkit-tap-highlight-color: transparent;
-}
+  }
 </style>
 
 <!---------------- JAVASCRIPT ---------------->
 <script>
-const calculatorCard = document.getElementById('calculatorCard') as HTMLElement;
-const movieDatabaseCard = document.getElementById('movieCard') as HTMLElement;
-const musicStoreCard = document.getElementById('musicStore') as HTMLElement;
-const portfolioCard = document.getElementById('portfolio') as HTMLElement;
-const weatherCard = document.getElementById('weather') as HTMLElement;
+  const calculatorCard = document.getElementById(
+    "calculatorCard"
+  ) as HTMLElement;
+  const movieDatabaseCard = document.getElementById("movieCard") as HTMLElement;
+  const musicStoreCard = document.getElementById("musicStore") as HTMLElement;
+  const portfolioCard = document.getElementById("portfolio") as HTMLElement;
+  const weatherCard = document.getElementById("weather") as HTMLElement;
 
+  calculatorCard.addEventListener("click", () => {
+    calculatorCard.classList.toggle("flipped");
+  });
 
-calculatorCard.addEventListener('click', () => {
-  calculatorCard.classList.toggle('flipped');
-});
+  movieDatabaseCard.addEventListener("click", () => {
+    movieDatabaseCard.classList.toggle("flipped");
+  });
 
-movieDatabaseCard.addEventListener('click', () => {
-  movieDatabaseCard.classList.toggle('flipped');
-});
+  musicStoreCard.addEventListener("click", () => {
+    musicStoreCard.classList.toggle("flipped");
+  });
 
-musicStoreCard.addEventListener('click', () => {
-  musicStoreCard.classList.toggle('flipped');
-})
+  portfolioCard.addEventListener("click", () => {
+    portfolioCard.classList.toggle("flipped");
+  });
 
-portfolioCard.addEventListener('click', () => {
-  portfolioCard.classList.toggle('flipped');
-});
-
-weatherCard.addEventListener('click', () => {
-  weatherCard.classList.toggle('flipped');
-})
+  weatherCard.addEventListener("click", () => {
+    weatherCard.classList.toggle("flipped");
+  });
 </script>
