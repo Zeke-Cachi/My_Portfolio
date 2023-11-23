@@ -22,7 +22,7 @@ module.exports = {
         musicStore: 'url("/projects/music-store.png")',
         portfolio: 'url("/projects/portfolio.png")',
         weather: 'url("/projects/weather-app.png")',
-        generic_ecommerce: 'url("/projects/ecommerce.jpg")',
+        generic_ecommerce: 'url("/projects/ecommerce.png")',
       },
       width: {
         calc: "calc(11rem * 12)",
